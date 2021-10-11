@@ -23,7 +23,9 @@ knitr::opts_chunk$set(echo = FALSE)
 # Just a formula
 
 - This presentation is about giving academic talk.
-- This is not the presentation formula. 
+- It does not offer the presentation formula. 
+- People (presenters) vary, and so will the presentations.
+- Audience and forums vary, and so should the presentations.
 - It is just a formula for a presentation.
 
 ---
@@ -32,22 +34,26 @@ knitr::opts_chunk$set(echo = FALSE)
 # Who cares?
 
 - A research project usually culminates in a publication.
-- Typically once the complete draft of the paper is ready, the authors present the study to interested parties, usually other academics.
-- When done skillfully, a presentation can play a decisive role in the ultimate success of the paper, measured by the quality of the journal it will end up in, or the number of citations it receives. 
+- Typically once the complete draft of the paper is ready, the authors present the study to interested parties.
+- When done skillfully, a presentation can play a decisive role in the ultimate success of the paper 
+  * measured by the quality of the journal it will end up in, or the number of citations it receives. 
 
 ---
 
 
 # The formulas
 
-- A typical research paper consists of the introduction (see [Keith Head's post](http://blogs.ubc.ca/khead/research/research-advice/formula)), the conclusion (see [Marc Bellemare's post](https://marcfbellemare.com/wordpress/12060)), and the 'middle bits' (see [Marc Bellemare's post](https://marcfbellemare.com/wordpress/12797)).
+- A typical research paper consists of 
+  * the introduction (see [Keith Head's post](http://blogs.ubc.ca/khead/research/research-advice/formula)), 
+  * the 'middle bits' (see [Marc Bellemare's post](https://marcfbellemare.com/wordpress/12797)), and
+  * the conclusion (see [Marc Bellemare's post](https://marcfbellemare.com/wordpress/12060)). 
 
 ---
 
 
 # From paper to presentation
 
-- The proportions and composition of different bits change somewhat as we map a paper onto a presentation. 
+- The proportions and composition of different parts change somewhat as we map a paper onto a presentation. 
 - But generally, what is true about the paper is also true about the presentation:
   * The Introduction is the most important section of the paper/presentation.
   * The opening paragraphs/slides are the most important parts of the introduction.
@@ -70,18 +76,19 @@ knitr::opts_chunk$set(echo = FALSE)
 # Use words (and slides) scarcely
 
 - A slide should have as few words as possible, but not fewer.
-- (Do as I say not as I do).
+  * (Do as I say not as I do).
 - Each slide counts.
 - Each bullet point matters.
 - The word-count is not the number of words that appear on a slide, rather it's the number of words the presenter says while on that slide.
-- (One slide per one minute of a talk is my rule of thumb).
+  * (One slide per one minute of a talk is my rule of thumb).
 
 ---
 
 
 # Use illustrations generously
 
-- A picture is worth a nine-hundred-and-ninety-five words (the other five words are reserved to label the axes).
+- A picture is worth a nine-hundred-and-ninety-five words 
+  * (the other five words are reserved to label the axes).
 - In the paper:
   * a figure should be self-contained.
   * this is usually achieved by properly labeling the axes, and by providing coherent footnotes.
@@ -114,14 +121,6 @@ knitr::opts_chunk$set(echo = FALSE)
 - In the presentation:
   * provide just enough detail for the key equation(s), refer the audience to the paper.
   * type equations, do not paste their snapshots.
-
----
-
-
-# Adopt your style, adapt to audience
-
-- People (presenters) vary, and so will the presentations.
-- Audience and forums vary, and so should the presentations.
 
 ---
 
