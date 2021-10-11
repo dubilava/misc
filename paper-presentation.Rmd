@@ -1,0 +1,170 @@
+---
+title: "Giving an Academic Talk to Peers"
+subtitle: "A Perspective of a Mediocre Presenter"
+author: "David Ubilava"
+date: "October, 2021"
+output:
+  xaringan::moon_reader:
+    css: [default, metropolis, metropolis-fonts, style.css]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      countIncrementalSlides: false
+header-includes: 
+  - \usepackage{tikz}
+  - \usepackage{pgfplots}
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# What is this?
+
+- This presentation is about presenting an academic work.
+- It is also about presenting the said talk to academics.
+- This is not the presentation formula. 
+- Rather, this is a formula for a presentation.
+- Depending on research, and target audience, the structure and composition of a presentation will and should vary.
+- The motive and the general principles of a presentation will remain more or less the same.
+- And that's what is what this presentation is about.
+
+---
+
+
+# The value a good presentation
+
+- A research project usually culminates in a publication.
+- Along the way, typically once the complete draft of the paper is ready, the author(s) present the study to the interested parties, usually to other academics.
+- When done skillfully, a presentation can play a decisive role in the ultimate success of the paper, measured by the quality of the journal it will end up published, or the number of citations it receives. 
+
+---
+
+# The value a good presentation
+
+- There is value in giving a good presentation. 
+- Preparing a good presentation is half the battle.
+
+---
+
+
+# From paper to presentation
+
+- A typical research paper consists of the introduction (see [Keith Head's post](http://blogs.ubc.ca/khead/research/research-advice/formula)), the conclusion (see [Marc Bellemare's post](https://marcfbellemare.com/wordpress/12060)), and the 'middle bits' (see [Marc Bellemare's post](https://marcfbellemare.com/wordpress/12797)).
+
+---
+
+
+# From paper to presentation
+
+- The proportions and composition of different bits an pieces of the paper change somewhat as we map a paper onto a presentation. 
+- But generally, what is true about the paper is also true about the presentation:
+  * The Introduction is the most important section of the paper/presentation.
+  * The opening paragraphs/slides are the most important parts of the introduction.
+
+---
+
+
+# Get to the point soon(er)
+
+- It is important in papers, and more so in presentations, to get to the point of she study early.
+- In the paper:
+  * state the research question on the first page.
+- In the presentation:
+  * state the research question on the first slide. 
+  * offer the 'answer' to the question&mdash;the takeaway message of the study on the next slide.
+- When done in this way, the message will stick with the audience throughout the presentation.
+
+---
+
+# Use words (and slides) scarcely
+
+- A slide should have as few words as possible, but not fewer.
+- (Do as I say not as I do).
+- Each slide counts.
+- Each bullet point matters.
+- The word-count on a slide is not the number of words that appear on it, it's the number of words the presenter says while on that slide.
+- (One slide per one minute of a talk is my rule of thumb).
+
+---
+
+
+# Use illustrations generously
+
+- A picture is worth a nine-hundred-and-ninety-five words (the other five words are reserved to label the axes).
+- In the paper:
+  * a figure should be self-contained.
+  * this is usually achieved by properly labeling the axes, and by providing coherent footnotes.
+- In the presentation:
+  * you are the 'coherent footnote.'
+
+---
+
+
+# Use tables... NOT
+
+- A table is not worth a slide. 
+- In the paper:
+  * a table can be useful as it documents exact values of some important statistics.
+  * a table, also, should be self-contained.
+- In the presentation:
+  * convert tables to figures or to words. 
+  * (you and your audience can thank me later).
+  * if you must have a table, keep it small (no more than a few rows and columns) even if its 'paper variant' is large.
+
+---
+
+
+# Math and equations
+
+- Use equations sparingly unless, of course, the paper is about the equations.
+- In the paper:
+  * explain every detail of the equation, every bit of its Greek and Latin characters.
+- In the presentation:
+  * provide enough detail, refer the audience to the paper.
+  * type equations, do not paste their snapshots.
+
+---
+
+
+# Get them involved
+
+- The point of the presentation is to make the people in the room start caring about your work.
+- They may or may not like it, and they may or may not have a good reason for that, but so long as they care enough to participate in the dialogue, you have won the audience.
+
+---
+
+
+# Have a conversation
+
+- A presentation is meant to be a dialogue, not a monologue. 
+- It is, indeed, a conversation among the peers, and everyone in the room is part of it.
+- You just happen to know the most about the topic&mdash;because it is *your* topic&mdash;and, thus, you are the one leading the conversation.
+- Take questions from the audience gracefully because, you know, that's how conversations work.
+
+---
+
+
+# Enjoy the process
+
+- Giving a presentation can be stressful&mdash;it often is.
+- Experience reduces the degree of stressfulness, but that takes time (years).
+- In the short run: practice makes perfect.
+- No presentation is perfect in absolute sense, however.
+- But it doesn't have to be perfect for it to be enjoyable.
+- Enjoyable for you as well as for your audience.
+- Aim for that, and everything else will just fall in place.
+
+---
+
+
+
+# Further reading
+
+The content and inspiration of these slides are based on these excellent sources:
+
+[How to Give an Applied Micro Talk](https://www.brown.edu/Research/Shapiro/pdfs/applied_micro_slides.pdf) by Jesse Shapiro
+
+[Public Speaking for Academic Economists](https://mfr.osf.io/render?url=https%3A%2F%2Fosf.io%2Fd8wm9%2Fdownload) by Rachael Meager
+
