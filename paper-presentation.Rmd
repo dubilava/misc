@@ -5,10 +5,11 @@ author: "David Ubilava"
 date: "October, 2021"
 output:
   xaringan::moon_reader:
-    css: [default, metropolis, metropolis-fonts, style.css]
+    css: [default, metropolis, metropolis-fonts,style.css]
     lib_dir: libs
     nature:
       highlightStyle: github
+      highlightLines: true
       countIncrementalSlides: false
 header-includes: 
   - \usepackage{tikz}
@@ -38,6 +39,13 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ---
 
+class: inverse, center, middle
+name: github
+
+# Getting it right
+
+---
+
 
 # The formulas
 
@@ -45,16 +53,8 @@ knitr::opts_chunk$set(echo = FALSE)
   * the introduction (see [Keith Head's post](http://blogs.ubc.ca/khead/research/research-advice/formula)), 
   * the 'middle bits' (see [Marc Bellemare's post](https://marcfbellemare.com/wordpress/12797)), and
   * the conclusion (see [Marc Bellemare's post](https://marcfbellemare.com/wordpress/12060)). 
-
----
-
-
-# From paper to presentation
-
 - The proportions and composition of different parts change as we map a paper onto a presentation. 
-- But generally, what is true about the paper is also true about the presentation:
-  * The Introduction is the most important section of the paper/presentation.
-  * The opening paragraphs/slides are the most important parts of the introduction.
+- Generally, what is true about the paper is also true about the presentation... with some adaptations.
 
 ---
 
@@ -122,6 +122,13 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ---
 
+class: inverse, center, middle
+name: github
+
+# Making it work
+
+---
+
 
 # Adopt your style, adapt to audience
 
@@ -178,9 +185,9 @@ knitr::opts_chunk$set(echo = FALSE)
 
 These slides have been inspired by these excellent sources:
 
-[How to Give an Applied Micro Talk](https://www.brown.edu/Research/Shapiro/pdfs/applied_micro_slides.pdf) by **Jesse Shapiro**
+[How to Give an Applied Micro Talk](https://www.brown.edu/Research/Shapiro/pdfs/applied_micro_slides.pdf) by *Jesse Shapiro*
 
-[Public Speaking for Academic Economists](https://mfr.osf.io/render?url=https%3A%2F%2Fosf.io%2Fd8wm9%2Fdownload) by **Rachael Meager**
+[Public Speaking for Academic Economists](https://mfr.osf.io/render?url=https%3A%2F%2Fosf.io%2Fd8wm9%2Fdownload) by *Rachael Meager*
 
-These slides have greatly benefited from **Jonathan Newton**'s thoughtful feedback. His [An Alternative Guide for the Young Economist](https://jonathannewton.net/wp-content/uploads/An%20alternative%20guide%20for%20the%20young%20economist.pdf), which is an insightful resource in and of itself, offers a nice illustration of an effective presentation.
+These slides have greatly benefited from *Jonathan Newton*'s thoughtful feedback. His [An Alternative Guide for the Young Economist](https://jonathannewton.net/wp-content/uploads/An%20alternative%20guide%20for%20the%20young%20economist.pdf), which is an insightful resource in and of itself, offers a nice illustration of an effective presentation.
 

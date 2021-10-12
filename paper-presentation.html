@@ -43,6 +43,13 @@ class: center, middle, inverse, title-slide
 
 ---
 
+class: inverse, center, middle
+name: github
+
+# Getting it right
+
+---
+
 
 # The formulas
 
@@ -50,16 +57,8 @@ class: center, middle, inverse, title-slide
   * the introduction (see [Keith Head's post](http://blogs.ubc.ca/khead/research/research-advice/formula)), 
   * the 'middle bits' (see [Marc Bellemare's post](https://marcfbellemare.com/wordpress/12797)), and
   * the conclusion (see [Marc Bellemare's post](https://marcfbellemare.com/wordpress/12060)). 
-
----
-
-
-# From paper to presentation
-
 - The proportions and composition of different parts change as we map a paper onto a presentation. 
-- But generally, what is true about the paper is also true about the presentation:
-  * The Introduction is the most important section of the paper/presentation.
-  * The opening paragraphs/slides are the most important parts of the introduction.
+- Generally, what is true about the paper is also true about the presentation... with some adaptations.
 
 ---
 
@@ -127,6 +126,13 @@ class: center, middle, inverse, title-slide
 
 ---
 
+class: inverse, center, middle
+name: github
+
+# Making it work
+
+---
+
 
 # Adopt your style, adapt to audience
 
@@ -183,17 +189,18 @@ class: center, middle, inverse, title-slide
 
 These slides have been inspired by these excellent sources:
 
-[How to Give an Applied Micro Talk](https://www.brown.edu/Research/Shapiro/pdfs/applied_micro_slides.pdf) by **Jesse Shapiro**
+[How to Give an Applied Micro Talk](https://www.brown.edu/Research/Shapiro/pdfs/applied_micro_slides.pdf) by *Jesse Shapiro*
 
-[Public Speaking for Academic Economists](https://mfr.osf.io/render?url=https%3A%2F%2Fosf.io%2Fd8wm9%2Fdownload) by **Rachael Meager**
+[Public Speaking for Academic Economists](https://mfr.osf.io/render?url=https%3A%2F%2Fosf.io%2Fd8wm9%2Fdownload) by *Rachael Meager*
 
-These slides have greatly benefited from **Jonathan Newton**'s thoughtful feedback. His [An Alternative Guide for the Young Economist](https://jonathannewton.net/wp-content/uploads/An%20alternative%20guide%20for%20the%20young%20economist.pdf), which is an insightful resource in and of itself, offers a nice illustration of an effective presentation.
+These slides have greatly benefited from *Jonathan Newton*'s thoughtful feedback. His [An Alternative Guide for the Young Economist](https://jonathannewton.net/wp-content/uploads/An%20alternative%20guide%20for%20the%20young%20economist.pdf), which is an insightful resource in and of itself, offers a nice illustration of an effective presentation.
 
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
 "highlightStyle": "github",
+"highlightLines": true,
 "countIncrementalSlides": false
 });
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
@@ -260,7 +267,24 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
       links[i].target = '_blank';
     }
   }
-})();</script>
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
 
 <script>
 slideshow._releaseMath = function(el) {
