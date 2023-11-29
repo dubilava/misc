@@ -22,6 +22,10 @@
   font-size: 28px;
 }
 
+.remark-slide-content h4 {
+  font-size: 22px;
+}
+
 .remark-slide-number {
   font-family: 'Inter Tight', sans-serif;
   font-size: 13pt;
