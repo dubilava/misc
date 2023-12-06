@@ -233,6 +233,25 @@ The estimated effect is not sensitive to
 ---
 
 
+# 'Strongly' vs 'Weakly' teleconnected countries
+
+.right-85[
+
+![](figures/countries.png)
+
+]
+
+---
+
+# 'Strongly' vs 'Weakly' teleconnected countries
+
+.right-50[
+![](figures/reg6.png)
+]
+
+---
+
+
 # Contribution to climate-conflict nexus
 
 I clarify that **the effect of El Niño on conflict is not unequivocally positive**, as previously thought (e.g., [Hsiang et al., 2011](https://www.nature.com/articles/nature10311))
