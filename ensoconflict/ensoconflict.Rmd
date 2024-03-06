@@ -1,6 +1,6 @@
 ---
 title: "Climate, Crops, and Postharvest Conflict"
-subtitle: "Presented at Semi-Periodic Agricultural & Development Economics Research Symposium"
+subtitle: "Presented at the Sydney Environment Institute Lunchtime Seminar Series"
 author: "David Ubilava"
 date: "University of Sydney"
 output:
@@ -30,14 +30,14 @@ loadfonts(device="win",quiet=T)
 ---
 
 
-# Precipitation forecast for Dec 2023 - Feb 2024
+# Dec 2023 - Feb 2024 forecasts (relative to 1991-2020)
 
-.left-35[
-![](figures/drought2024.png)
+.left-40[
+![](figures/DJF24_Afr_pcp.gif)
 ]
 
-.right-35[
-![](figures/floods2024.png)
+.right-40[
+![](figures/DJF24_Afr_tmp.gif)
 ]
 
 ---
@@ -57,14 +57,14 @@ In these locations, we would expect the effect to manifest itself **during the h
 
 # Yes... El Niño events reduce conflict!
 
-But **only** political violence targeted at civilians, and **only** in locations with crop agriculture and during the early postharvest season. 
+In locations with crop agriculture during the early postharvest season. 
 
-**A 1&deg;C increase in the December Oceanic Niño Index (ONI)&mdash;typically indicative of a moderate El Niño event&mdash;is associated with at least three percent reduction in political violence during the three-months period after harvest (evaluated at average cropland size and average crop growing season intensity of ENSO teleconnections).**
+**A 1&deg;C increase in the December Oceanic Niño Index (ONI)&mdash;typically indicative of a moderate El Niño event&mdash;is associated with at least three percent reduction in political violence with civilian targeting during the three-months period after harvest (evaluated at average cropland size and average crop growing season intensity of ENSO teleconnections).**
 
 ---
 
 
-# Historical evidence: The late 19th cebtury El Niño events
+# Anecdotal evidence: Late 19th century El Niño events
 
 
 As a result of (or in relation to) the 1876-78 El Niño events:
@@ -75,11 +75,12 @@ As a result of (or in relation to) the 1876-78 El Niño events:
 ---
 
 
-# Historical evidence: The late 19th cebtury El Niño events
+# Anecdotal evidence: Late 19th century El Niño events
 
-In Ethiopia, 'The Cruel Days' of 1888-92 were likely triggered by El Niño events that brought about droughts. 
+In Ethiopia, 'The Great Famine of 1888-92' was likely triggered (or, at least, partly aided) by El Niño events that brought about droughts. 
 
 - The lack of food provision turned provincial governors and their warriors into foraging bandits. Trade routes in Ethiopia and neighboring countries fell victim to raids aimed at appropriating imported grain (Davis, 2002).
+- Like Dutch colonialists in Indonesia, Italian invaders in Ethiopia used the pretext of abandoned lands to pave the way for the colonization of the Eritrean highlands and the Tigray plateau (Davis, 2002).
 
 ---
 
@@ -101,30 +102,21 @@ Location and timing are typically known well in advance, but crop yields are det
 
 Crop growing season weather and realized yields can influence perpetrators’ decisions as they assess whether the potential spoils to be appropriated are worth their effort ([Koren and Bagozzi, 2017](https://doi.org/10.1177/002234331668454); [McGuirk and Burke 2020](https://doi.org/10.1086/709993)).
 
-Changes in agricultural yields can induce social unrest, as farmers and non-farmers assess their well-being relative to the expectations or to the well-being of others ([Mitra and Ray, 2014](https://doi.org/10.1086/676316); [Hendrix and Haggard, 2015](https://doi.org/10.1177/00223433145615)).
+Resentment, as farmers and non-farmers assess their well-being relative to the expectations or to the well-being of others, can amplify political violence ([Mitra and Ray, 2014](https://doi.org/10.1086/676316); [Hendrix and Haggard, 2015](https://doi.org/10.1177/00223433145615)).
 
 ---
 
 
-# Conflict trends and spatial coverage
+# Oceanic Niño Index
 
 .right-85[
 
-![](figures/conflict.png)
+![](figures/oni.png)
 
 ]
 
 ---
 
-# Crop production and harvest seasons
-
-.right-85[
-
-![](figures/crops.png)
-
-]
-
----
 
 # ENSO teleconnections
 
@@ -136,6 +128,7 @@ Changes in agricultural yields can induce social unrest, as farmers and non-farm
 
 ---
 
+
 # Local weather responses to El Niño events
 
 .right-85[
@@ -146,6 +139,29 @@ Changes in agricultural yields can induce social unrest, as farmers and non-farm
 
 ---
 
+
+# Crop production and harvest seasons
+
+.right-85[
+
+![](figures/crops.png)
+
+]
+
+---
+
+
+# Political violence over time and across space
+
+.right-85[
+
+![](figures/conflict.png)
+
+]
+
+---
+
+
 # Research design
 
 I exploit variations in the ENSO–conflict relationship between cells with different numbers of months during the crop growing season, in which changes in local weather are linked to changes in sea surface temperatures during the peak ENSO season. 
@@ -155,101 +171,57 @@ The ENSO–conflict relationship in locations with small or no cropland is assum
 ---
 
 
-# Effect of El Niño on conflict
 
-$$y_{it}=\alpha\tau_i s_t+\theta ' x_{it}+\mu_i+\lambda_t+\varepsilon_{it}$$
+# Main result
 
-.right-50[
-![](figures/reg1.png)
-]
+A 1&deg;C increase in growing-season-adjusted December ONI **reduces** political violence by $3.6\%$ during the postharvest season. This effect is relative to the observed average incidents conflict in croplands (0.04) evaluated at the average cropland size (9,000 hectares) and the average teleconnection intensity (0.28).
 
----
-
-# A crop year adjusted ONI
-
-.right-85[
-
-![](figures/scheme.png)
-
-]
-
----
-
-
-# Effect of El Niño on conflict in croplands
-
-$$y_{it}=\alpha\tau_i s_t+\beta a_i\tau_i^{gs} s_t^{gs}+\theta ' x_{it}+\mu_i+\lambda_t+\varepsilon_{it}$$
-
-.right-50[
-![](figures/reg2.png)
-]
-
----
-
-
-# Effect of El Niño on postharvest conflict in croplands
-
-$$y_{it}=\alpha\tau_i s_t+\beta a_i\tau_i^{gs} s_t^{gs}+\gamma a_i\tau_i^{gs} s_t^{gs}d_{it}+\delta a_i d_{it}+\theta ' x_{it}+\mu_i+\lambda_t+\varepsilon_{it}$$
-
-.right-50[
-![](figures/reg3.png)
-]
 
 ---
 
 # Robustness checks
 
-The estimated effect is not sensitive to
+The estimated effect is not (overly) sensitive to
 
 - different sets of fixed effects
 - different sizes of postharvest windows
-- omitting conflict 'hotspots'
+- omitting conflict hotspots
+- different measures of teleconnection
 - using incidence as the dependent variable
 
 ---
 
-# 'Bad' El Niño
+# Adverse El Niño
 
-.left-45[
-![](figures/goodbad.png)
-]
+In a subset of countries where most of the cropland is characterized by a simultaneous decrease in average growing season precipitation and increase in average growing season maximum temperature in response to a positive deviation in December ONI:
 
-.right-50[
-![](figures/reg4.png)
-]
+A 1&deg;C increase in growing-season-adjusted December ONI **reduces** political violence by $4.6\%$ during the postharvest season. 
+
+In the rest of the countries the effect is smaller and not significant.
+
 
 ---
 
-# 'Agrarian' conflict
+# Agrarian conflict
 
-.left-45[
+
 **Keywords**: farm, farmer, peasant, producer, agriculture, agricultural, livestock, animal, cattle, sheep, goat, crop, cereal, grain, maize, millet, rice, sorghum, wheat, produce, food, harvest.
-]
 
-.right-50[
-![](figures/reg5.png)
-]
+A 1&deg;C increase in growing-season-adjusted December ONI **reduces** political violence by $6.7\%$ during the postharvest season. 
 
 ---
 
 
-# 'Strongly' vs 'Weakly' teleconnected countries
+# Conflict dynamics
 
 .right-85[
 
-![](figures/countries.png)
+![](figures/event_study.png)
 
 ]
 
 ---
 
-# 'Strongly' vs 'Weakly' teleconnected countries
-
-.right-50[
-![](figures/reg6.png)
-]
-
----
 
 
 # Contribution to climate-conflict nexus
@@ -270,7 +242,7 @@ ENSO-related changes in conflict materialize through the agricultural channel.
 
 While not surprising, this finding unveils an important nuance related to the seasonal nature of agricultural production: **the effect aligns with crop-year calendars and manifests during the early postharvest season**. 
 
-This finding accords with recent literature on the positive relationship between agricultural output and conflict (e.g., [McGuirk and Burke 2020](https://doi.org/10.1086/709993); [Crost and Felter 2020](https://doi.org/10.1093/jeea/jvz025); [Koren and Schon 2023](https://link.springer.com/article/10.1007/s10113-023-02090-7)) and contributes to the emerging literature on the seasonal patterns of conflict (Guardado and Pennings 2023; [Ubilava et al. 2023](https://doi.org/10.1111/ajae.12364)).
+This accords with recent literature on the positive relationship between agricultural output and conflict (e.g., [McGuirk and Burke 2020](https://doi.org/10.1086/709993); [Koren and Schon 2023](https://link.springer.com/article/10.1007/s10113-023-02090-7)) and contributes to the emerging literature on the seasonality of conflict (Guardado and Pennings 2023; [Ubilava et al. 2023](https://doi.org/10.1111/ajae.12364)).
 
 ---
 
@@ -287,9 +259,11 @@ Lack of political violence may be seen as a sign of food scarcity and increased 
 
 # Policy implications
 
-These findings also have clear policy implications in establishing an **early-warning system for political violence in ENSO-affected regions** of Africa. 
+**Because we can predict ENSO events at least several months in advance**, the estimated linkages between ENSO shocks and conflict can have clear policy implications in establishing an early-warning system for political violence in ENSO-affected regions of Africa.
 
-**Because we can predict ENSO events** at least several months in advance, the estimated linkages between ENSO shocks and conflict may help guide local authorities and international organizations in making spatiotemporal adjustments to the scope and extent of their peacemaking activities.
+**Because ENSO events can simultaneously alter several weather variables**, including extreme weather events, across large swathes of land, the ENSO effect can be viewed as a better approximation of the effect of changing climate on societal outcomes
+
+
 
 ---
 
@@ -308,8 +282,6 @@ These findings also have clear policy implications in establishing an **early-wa
 #### Keeley, L. H. (2016). Food for War, War for Food, and War on Food. In: van Derwarker, A., Wilson, G. (eds) The Archaeology of Food and Warfare. Springer.
 
 #### Kreike, E. (2022). A Perfect Tsunami? El Niño, War and Resilience on Aceh, Sumatra. In Perspectives on Public Policy in Societal-Environmental Crises: What the Future Needs from History (pp. 123–44). Springer.
-
-#### Rudé, G. F. (1964). The Crowd in History: A Study of Popular Disturbances in France and England, 1730–1848. Wiley.
 
 
 
