@@ -22,10 +22,6 @@
   font-size: 28px;
 }
 
-.remark-slide-content h4 {
-  font-size: 22px;
-}
-
 .remark-slide-number {
   font-family: 'Inter Tight', sans-serif;
   font-size: 13pt;
@@ -109,7 +105,7 @@ h2, h3, h4 {
 .title-slide h2  {
   color: darkgray; /* change this */
   font-family: 'Inter Tight', sans-serif;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 400;
   text-align: left;
   text-shadow: none;
@@ -204,6 +200,11 @@ a:active {
   padding-top: 0;
   float: right;
   width: 50%;
+}
+.right-45 {
+  padding-top: 0;
+  float: right;
+  width: 45%;
 }
 .right-40 {
   padding-top: 0;

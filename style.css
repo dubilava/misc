@@ -166,6 +166,11 @@ a:active {
   float: left;
   width: 35%;
 }
+.left-40 {
+  padding-top: 0;
+  float: left;
+  width: 40%;
+}
 .left-45 {
   padding-top: 0;
   float: left;
@@ -195,6 +200,11 @@ a:active {
   padding-top: 0;
   float: right;
   width: 50%;
+}
+.right-45 {
+  padding-top: 0;
+  float: right;
+  width: 45%;
 }
 .right-40 {
   padding-top: 0;
