@@ -21,22 +21,6 @@ loadfonts(device="win",quiet=T)
 ```
 
 
-# About me
-
-.right-85[
-
-I am a co-editor of [Food Policy](https://www.sciencedirect.com/journal/food-policy) (2018&ndash;) and an associate editor of the [American Journal of Agricultural Economics](https://onlinelibrary.wiley.com/journal/14678276) (2022&ndash;).
-
-As an editor, I have handled nearly 450 submissions.
-
-As a reviewer, I have prepared (an estimate of) 300 reports.
-
-As an author, I have published 23 papers, most of them in agricultural economics journals.
-
-]
-
----
-
 
 # Agricultural economics as a field of economics (?!)
 
@@ -126,7 +110,7 @@ In their [recent paper](https://doi.org/10.1111/1477-9552.12473), Finger and co-
 ---
 
 
-# Editors of agricultural economics journals
+# Editors of top agricultural economics journals
 
 .right-85[
 
@@ -136,13 +120,14 @@ In their [recent paper](https://doi.org/10.1111/1477-9552.12473), Finger and co-
 
 ---
 
+
 # If the mountain won't come to Muhammad...
 
 .right-85[
 
 If you are an academic in the USA/Canada or EU/UK, there is a good chance that an editor (or a potential reviewer) is in the audience during your seminar talk (for example). 
 
-If you are an "outsider," your best option for achieving a comparable result is to present at a conference attended by one of those editors.
+If you are an "outsider," you can achieve a comparable (though not similar) result by presenting at a conference attended by one of those editors.
 
 ]
 
@@ -154,11 +139,11 @@ If you are an "outsider," your best option for achieving a comparable result is 
 
 .right-85[
 
-People view reviewing as a service, a chore. But it is so much more than that.
+People view reviewing as a service. But it is more than that.
 
-First, it is a way for an author to pay it forward&mdash;if you have published or plan on publishing in a journal, you "owe" them a review or two.
+It is a way for an author to pay it forward&mdash;if you have published or plan on publishing in a journal, you "owe" them a review or two.
 
-But reviewing is also a way to "introduce" yourself to an editor. 
+Importantly, it is also a way to "introduce" yourself to an editor. 
 
 Knowing the editor does not guarantee a positive outcome. But empirical evidence suggest that it helps at the margin.
 
@@ -204,7 +189,7 @@ Use every opportunity to heighten visibility of your work and, in the process, t
 
 The pool of the journals is not as large as it may seem. There are likely only a handful of journals that will be willing to eventually publish your paper and where you would want it to be published.
 
-As an aside, in the intermediate term, move the two circles of this Venn diagram closer&mdash;i.e., write the types of papers that will have the best chance being published in the types of journals where you would want to publish.
+As an aside, in the intermediate term, bring the two circles of this Venn diagram closer together&mdash;i.e., write the types of papers that have the best chance of being published in the journals where you want to publish.
 
 These could be very different sets of journals. Under no circumstances should these be predatory journals.
 
