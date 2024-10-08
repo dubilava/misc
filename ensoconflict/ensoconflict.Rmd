@@ -1,6 +1,5 @@
 ---
 title: "Climate, Crops, and Postharvest Conflict"
-subtitle: "Presented at the University of Auckland on 23 Aug 2024"
 author: "David Ubilava"
 date: "University of Sydney"
 output:
@@ -128,8 +127,8 @@ El Niño events have historically contributed to famine and conflict.
 
 As a result of (or in relation to) the 1876-78 El Niño events:
 
-- In India, thievery became commonplace, with perpetrators targeting rural landowners, seizing their grain stores, and destroying their properties; calls for armed rebellion against British rule (Davis, 2002; Fagan, 2009).
-- In Indonesia, to make the most impact, Dutch invaders strategically timed their scorched-earth campaign to coincide with the onset of the rice harvest season (Kreike, 2022).
+- In India, **thievery became commonplace, with perpetrators targeting rural landowners, seizing their grain stores, and destroying their properties;** calls for armed rebellion against British rule (Davis, 2002; Fagan, 2009).
+- In Indonesia, **to make the most impact, Dutch invaders strategically timed their scorched-earth campaign to coincide with the onset of the rice harvest season** (Kreike, 2022).
 
 ]
 
@@ -142,14 +141,14 @@ As a result of (or in relation to) the 1876-78 El Niño events:
 
 In Ethiopia, 'The Cruel Days' of 1988-92 were likely triggered by El Niño events that brought about droughts. 
 
-- The lack of food provision turned provincial governors and their warriors into foraging bandits. Trade routes in Ethiopia and neighboring countries fell victim to raids aimed at appropriating imported grain (Davis, 2002).
+- The lack of food provision turned provincial governors and their warriors into foraging bandits. **Trade routes in Ethiopia and neighboring countries fell victim to raids aimed at appropriating imported grain** (Davis, 2002).
 
 ]
 
 ---
 
 
-# Historical evidence
+# Harvest and conflict: empirical evidence
 
 .right-85[
 
@@ -164,7 +163,7 @@ In times of chronic food scarcity, its sporadic abundances often triggered griev
 ---
 
 
-# Why (and how) might harvest alter conflict?
+# Harvest and conflict: conceptual illustration
 
 .right-85[
 
@@ -401,9 +400,9 @@ This seasonal relationship, inherently a temporal concept, also contains spatial
 
 .right-85[
 
-ENSO events can be predicted several months ahead&mdash;room for spatiotemporal adjustments to the scope and extent of peacemaking activities in response to short-term climate shocks.
+ENSO events can be predicted several months ahead&mdash;room for spatiotemporal adjustments to peacemaking activities in response to short-term climate shocks.
 
-Climate change is expected to intensify ENSO cycles&mdash;more frequent/drastic changes in agricultural production/incomes will make it difficult for actors to engage in long term social contract.
+Climate change is expected to intensify ENSO cycles&mdash;fluctuating agricultural production/incomes will make it difficult for actors to form long term social contracts.
 
 Climate change is expected to displace crop agriculture&mdash;harvest-related conflict will likely follow from areas with depleted crop agriculture to areas with intensified crop agriculture.
 

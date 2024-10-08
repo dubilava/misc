@@ -129,13 +129,17 @@ h2, h3, h4 {
   padding-bottom: 00px;
 }
 
-hr, .title-slide h2::after, .mline h1::after {
+hr, .title-slide h1::after, .mline h1::after {
   content: '';
   display: block;
   border: none;
   background-color: coral; /* change this */
   color: darkgray;
-  height: 1px;
+  height: 2px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding-top: 00px;
+  padding-bottom: 00px;
 }
 
 
