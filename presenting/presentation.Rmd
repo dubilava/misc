@@ -1,0 +1,215 @@
+---
+title: "Academic Presenting"
+subtitle: "Getting it Right and Making it Work"
+author: "David Ubilava"
+date: "University of Sydney"
+output:
+  xaringan::moon_reader:
+    css: [default, metropolis, metropolis-fonts, style.css]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(extrafont)
+loadfonts(device="win",quiet=T)
+```
+
+
+
+# Presentation is a crucial part of the research life-cycle
+
+.right-85[
+
+Once the complete draft of a paper is ready, the authors typically present their work to interested audiences, often at academic conferences or departmental seminar series.
+
+Presentations heighten the paper's visibility and allow the authors to receive valuable feedback from their peers.
+
+When done well, presentations can play a crucial role in the paper's eventual success, measured by the quality of the journal in which it is published or the number of citations it receives&mdash;both of which can have considerable career implications.
+
+]
+
+
+---
+
+
+# The 'formulas'
+
+.right-85[
+
+A typical research paper consists of 
+- the introduction (see [Keith Head's post](http://blogs.ubc.ca/khead/research/research-advice/formula)), 
+- the 'middle bits' (see [Marc Bellemare's post](https://marcfbellemare.com/wordpress/12797)), and
+- the conclusion (see [Marc Bellemare's post](https://marcfbellemare.com/wordpress/12060)). 
+
+Generally, what is true about the paper is also true about the presentation (slide deck)... with some caveats and adaptations.
+
+]
+
+---
+
+
+# Get to the point soon(er)!
+
+.right-85[
+It is important to get to the point of the research early.
+- **In a paper**:
+  * state the research question on the first (or second) page.
+- **In a presentation**:
+  * state the research question on the first (or second) slide. 
+  
+Presenting the research question upfront helps ensure that the message resonates with the audience throughout and serves as a useful anchor for their questions.
+]
+
+---
+
+# Use words (and slides) sparingly
+
+.right-85[
+
+Aim for one slide per minute for short talks (<30 minutes, e.g., conference presentations) and one slide per two minutes for longer talks (>45 minutes, e.g., seminar presentations).
+
+A slide should contain as few words as possible, but no fewer. The word count is not the number of words on the slide, but the number of words you say while on that slide.
+
+]
+
+---
+
+
+# Use illustrations generously
+
+.right-85[
+A picture is worth a nine-hundred-and-ninety-one words (the other nine words are reserved to label the axes).
+- **In a paper**:
+  * a figure should be self-contained.
+  * this is usually achieved by properly labeling the axes, and by providing coherent footnotes.
+- **In a presentation**:
+  * you are the '*coherent footnote.*'
+]
+
+---
+
+
+# Use tables... NOT
+
+.right-85[
+A table is rarely worth a slide. 
+- **In a paper**:
+  * tables can be useful for documenting exact values.
+  * tables, like figures, should be self-contained.
+- **In a presentation**:
+  * convert tables into figures or summarize them in words. 
+  * if you must have a table, keep it small (with only a few rows and columns) even if its "paper version" is large.
+  * create the slide-specific table, do not paste its snapshot!
+]
+
+---
+
+
+# Maths and equations
+
+.right-85[
+Use equations sparingly unless the paper is about the equations.
+- **In the paper**:
+  * explain every detail of each equation, every bit of its Greek and Latin characters.
+- **In the presentation**:
+  * provide just enough detail for key equation(s), refer the audience to the paper for more.
+  * type the equations, do not paste their snapshots!
+]
+
+---
+
+
+# Adopt your style, adapt to audience
+
+.right-85[
+People and topics vary, and so will the presentations. These slides do not offer *the* presentation formula, but rather *a* formula for a presentation.
+
+Audience and forums vary, and you should adapt accordingly. Know and respect your audience.
+]
+
+---
+
+
+# Invite the audience to your journey
+
+.right-85[
+One of the points of the presentation is to make the people in the room care about your work.
+
+They may or may not like it, and they may or may not have a good reason for that. But as long as they care enough to engage in the dialogue, you have won the audience.
+]
+
+---
+
+
+# Have a conversation
+
+.right-85[
+A presentation is meant to be a dialogue, not a monologue.
+
+It is, in fact, a conversation among peers. You just happen to know the most about the topic&mdash;because it is your topic&mdash;and thus, you get to lead the conversation.
+
+Lead the conversation, but take questions from the audience gracefully; after all, that’s how conversations work.
+]
+
+---
+
+
+# Practice makes perfect
+
+.right-85[
+Giving a presentation can be stressful&mdash;and it often is.
+
+Over time (and with experience), the level of stress associated with giving a talk can decrease, but that takes time (years).
+
+In the short run: practice makes perfect.
+]
+
+---
+
+
+# Enjoy the process
+
+.right-85[
+Hardly any presentation is perfect in the absolute sense.
+
+However, it doesn’t have to be perfect to be enjoyable&mdash;for you as well as your audience.
+
+Aim for that, and everything else will fall into place.
+]
+
+---
+
+
+
+# Acknowledgement and more resources 
+
+.right-85[
+These slides have been inspired by these excellent sources:
+
+[How to Give an Applied Micro Talk](https://www.brown.edu/Research/Shapiro/pdfs/applied_micro_slides.pdf) by *Jesse Shapiro*
+
+[Public Speaking for Academic Economists](https://mfr.osf.io/render?url=https%3A%2F%2Fosf.io%2Fd8wm9%2Fdownload) by *Rachael Meager*
+
+These slides have benefited from *Jonathan Newton*'s thoughtful feedback. His [An Alternative Guide for the Young Economist](https://jonathannewton.net/wp-content/uploads/An%20alternative%20guide%20for%20the%20young%20economist.pdf), which is an insightful resource in and of itself, offers a nice illustration of an effective presentation.
+]
+
+
+---
+
+
+
+# Disclaimers
+
+.right-85[
+
+The views expressed here are mine and should not be attributed to the institutions I am employed by or associated with.
+
+The advice I give is in good faith. I cannot be held responsible for any setbacks related to it. The system is highly heterogeneous as well as idiosyncratic, and experiences vary.
+
+]
