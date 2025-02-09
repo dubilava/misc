@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Roads and Riots</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Ashani Amarasinghe, Joshua Merfeld, David Ubilava" />
+    <script src="libs/header-attrs-2.26/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/metropolis.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/metropolis-fonts.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Roads and Riots
+]
+.subtitle[
+## Presented at the 2025 Conference of the Australasian Development Economics Association
+]
+.author[
+### Ashani Amarasinghe, Joshua Merfeld, <strong>David Ubilava</strong>
+]
+
+---
+
+
+
+
+
+
+
+# Roads are good... but they may also lead to bad outcomes
+
+.right-85[
+
+Roads facilitate economic growth by providing access to markets ([Donaldson, 2018](https://www.aeaweb.org/articles?id=10.1257/aer.20101199)), leading to more competitive pricing of goods and services and creating employment opportunities ([Aggarwal, 2018](https://doi.org/10.1016/j.jdeveco.2018.01.004); [Asher and Novosad, 2020](https://www.aeaweb.org/articles?id=10.1257/aer.20180268); [Jedwab and Storeygard, 2022](https://doi.org/10.1093/jeea/jvab027)).
+
+But even benevolent interventions, such as rural road construction, can yield unintended negative consequences. In India, for example, new road construction led to increased agricultural fires and particulate emissions with adverse health implications in the village ([Garg et al., 2024](https://www.aeaweb.org/articles?id=10.1257/pol.20220422)).
+
+]
+
+---
+
+
+# Roads may exacerbate conflict
+
+.right-85[
+
+1. By connecting urban and rural regions, roads (i) provide access to commodity markets and off-farm employment opportunities in cities, and (ii) enable recruitment of protesters from villages. This may alleviate grievances and resentment in villages, but increase tensions and the risk of social unrest in cities ([Bohlken and Sergenti, 2010](https://journals.sagepub.com/doi/full/10.1177/0022343310373032); [Wischnath and Buhaug, 2014](https://link.springer.com/article/10.1007/s10584-013-1004-0)).
+2. By connecting regions with different ethnic or religious backgrounds, roads increase the diversity of people comprising the integrated region. This may lead to more civil violence in the region ([Mitra and Ray, 2014](https://www.journals.uchicago.edu/doi/abs/10.1086/676316); [Bazzi and Gudgeon, 2021](https://www.aeaweb.org/articles?id=10.1257/app.20190309); [Panza and Swee, 2023](https://doi.org/10.1016/j.jebo.2022.11.032)). 
+
+]
+
+---
+
+# Roads network across India
+
+.right-85[
+
+![](figures/roads_network_india.png)
+
+]
+
+---
+
+
+# Roads network across grid cells
+
+.right-85[
+
+![](figures/roads_network_grids.png)
+
+]
+
+---
+
+
+# Conflict across India
+
+.right-85[
+
+![](figures/conflict_india.png)
+
+]
+
+---
+
+
+# Conflict across grid cells
+
+.right-85[
+
+![](figures/conflict_grids.png)
+
+]
+
+---
+
+
+# Baseline specification
+
+
+$$
+`\begin{aligned}
+\mathbb{1}\left(CONFLICT_{it}\right)   &amp;= \beta \log ROADS_{it} \\
+                &amp;+ \mu_i+\lambda_{t}+\theta'X_{it}+\varepsilon_{it}
+\end{aligned}`
+$$
+
+
+---
+
+
+# Baseline estimates
+
+
+| Variable          | Conflict | Protests  | Riots    | Violence | Battles  |
+|:----------------- | --------:| ---------:| --------:| --------:| --------:|
+| roads             | -0.0010  | -0.0017   | -0.0001  | -0.0001  | 0.0002   |
+
+---
+
+
+# Croplands
+
+.right-85[
+
+![](figures/crops_grids.png)
+
+]
+
+---
+
+
+# Croplands specification
+
+$$
+`\begin{aligned}
+\mathbb{1}\left(CONFLICT_{it}\right)   &amp;= \beta_1 \log ROADS_{it} \\
+                &amp;+ \beta_2 \log ROADS_{it}\times CROPLAND_{i} \\ 
+                &amp;+ \mu_i+\lambda_{t}+\theta'X_{it}+\varepsilon_{it}
+\end{aligned}`
+$$
+
+
+---
+
+
+# Croplands estimates (wheat and rice)
+
+
+| Variable         | Conflict | Protests  | Riots    | Violence | Battles  |
+|:---------------- | --------:| ---------:| --------:| --------:| --------:|
+| roads            | -0.0060*** | -0.0063*** | -0.0013** | 0.0000    | 0.0002    |
+| roads × cropland | 0.0005**   | 0.0005**   | 0.0001**  | -0.0000   | -0.0000   |
+
+
+---
+
+
+# Croplands estimates (wheat only)
+
+
+| Variable         | Conflict | Protests  | Riots    | Violence | Battles  |
+|:---------------- | --------:| ---------:| --------:| --------:| --------:|
+| roads            | -0.0021  | -0.0027** | -0.0004  | 0.0001    | 0.0002    |
+| roads × cropland | 0.0002   | 0.0002    | 0.0001   | -0.0000   | -0.0000   |
+
+
+---
+
+
+
+# Crop prices specification
+
+$$
+`\begin{aligned}
+\mathbb{1}\left(CONFLICT_{it}\right)   &amp;= \beta_1 \log ROADS_{it} \\
+                &amp;+ \beta_2 \log ROADS_{it}\times CROPLAND_{i} \\ 
+                &amp;= \beta_3 \log ROADS_{it}\times \log PRICE_{t} \\
+                &amp;+ \beta_4 \log ROADS_{it}\times CROPLAND_{i}\times \log PRICE_{t} \\ 
+                &amp;+ \mu_i+\lambda_{t}+\theta'X_{it}+\varepsilon_{it}
+\end{aligned}`
+$$
+
+
+---
+
+
+# Crop prices estimates
+
+
+| Variable         | Conflict | Protests  | Riots    | Violence | Battles  |
+|:---------------- | --------:| ---------:| --------:| --------:| --------:|
+| roads | -0.0500*** | -0.0530*** | -0.0018  | -0.0008    | 0.0046***  |
+| roads × cropland | 0.0002     | 0.0002     | 0.0001   | 0.0001***  | 0.0000**   |
+| roads × price | 0.0090***  | 0.0095***  | 0.0002   | 0.0001     | -0.0009*** |
+| roads × cropland × price | 0.0000     | 0.0000     | -0.0000  | -0.0000*** | -0.0000**  |
+
+]
+
+---
+
+
+
+
+# Religious diversity
+
+.right-85[
+
+![](figures/diversity_hex.png)
+
+]
+
+---
+
+
+# Religious diversity specification
+
+$$
+`\begin{aligned}
+\mathbb{1}\left(CONFLICT_{it}\right)   &amp;= \beta_1 \log ROADS_{it} \\
+                &amp;+ \beta_2 \log ROADS_{it}\times DIVERSITY_{i} \\ 
+                &amp;+ \mu_i+\lambda_{t}+\theta'X_{it}+\varepsilon_{it}
+\end{aligned}`
+$$
+
+
+---
+
+
+# Religious diversity estimates
+
+| Variable          | Conflict | Protests  | Riots    | Violence | Battles  |
+|:----------------- | --------:| ---------:| --------:| --------:| --------:|
+| roads             | -0.0019  | -0.0040** | 0.0010   | 0.0005    | 0.0017**  |
+| roads × diversity | 0.0053   | 0.0132    | -0.0061  | -0.0039   | -0.0087** |
+
+
+---
+
+
+
+# Religious diversity and crop prices specification
+
+$$
+`\begin{aligned}
+\mathbb{1}\left(CONFLICT_{it}\right)   &amp;= \beta_1 \log ROADS_{it} \\
+                &amp;+ \beta_2 \log ROADS_{it}\times DIVERSITY_{i} \\ 
+                &amp;= \beta_3 \log ROADS_{it}\times \log PRICE_{t} \\
+                &amp;+ \beta_4 \log ROADS_{it}\times DIVERSITY_{i}\times \log PRICE_{t} \\ 
+                &amp;+ \mu_i+\lambda_{t}+\theta'X_{it}+\varepsilon_{it}
+\end{aligned}`
+$$
+
+
+---
+
+
+# Religious diversity and crop prices estimates
+
+
+| Variable         | Conflict | Protests  | Riots    | Violence | Battles  |
+|:---------------- | --------:| ---------:| --------:| --------:| --------:|
+| roads | -0.0595*** | -0.0608*** | -0.0128*** | -0.0037**  | 0.0057***  |
+| roads × diversity | 0.0468**   | 0.0410**   | 0.0562***  | 0.0234***  | -0.0036    |
+| roads × price | 0.0106***  | 0.0106***  | 0.0022***  | 0.0006**   | -0.0008*** |
+| roads × diversity × price | -0.0070*** | -0.0049*   | -0.0094*** | -0.0041*** | -0.0007    |
+
+
+]
+
+
+---
+
+# We contribute to the literature on
+
+.right-85[
+
+1. The unintended consequences of road construction ([Garg et al., 2024](https://www.aeaweb.org/articles?id=10.1257/pol.20220422)), particularly in the context of facilitating an increase in unlawful activities or outcomes ([Agnew, 2020](https://doi.org/10.1111/jors.12491);[Calamunci and Lonsky, 2024](https://doi.org/10.1093/ej/ueae068)). 
+2. The economic roots of conflict ([Bazzi and Blattman, 2014](https://www.aeaweb.org/articles?id=10.1257/mac.6.4.1);[McGuirk and Burke, 2020](https://doi.org/10.1086/709993)), with a specific focus on commodity price shocks.
+
+]
+
+
+
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
