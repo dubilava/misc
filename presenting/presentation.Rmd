@@ -1,0 +1,183 @@
+---
+title: "Academic Presenting"
+subtitle: "Getting it Right and Making it Work"
+author: "David Ubilava"
+date: "University of Sydney"
+output:
+  xaringan::moon_reader:
+    css: [default, metropolis, metropolis-fonts, style.css]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(extrafont)
+loadfonts(device="win",quiet=T)
+```
+
+
+# Why should we care?
+
+Presentation is a crucial part of the research life-cycle. 
+
+Once the first draft of the paper is ready, the authors present it to interested parties (typically at conferences and departmental seminars). The immediate goal is to heighten visibility of the work.
+
+The ultimate goal is to successfully publish the paper, where success may be measured by the quality of the journal it will end up in, or the number of citations it receives. 
+
+This can have important career implications for the author(s). 
+
+---
+
+
+# The formulas
+
+A typical (economics and related disciplines) paper consists of three parts:
+- the introduction (see [Keith Head's post](http://blogs.ubc.ca/khead/research/research-advice/formula)), 
+- the 'middle bits' (see [Marc Bellemare's post](https://marcfbellemare.com/wordpress/12797)),
+- the conclusion (see [Marc Bellemare's post](https://marcfbellemare.com/wordpress/12060)). 
+
+These "formulas" outline necessary and optional elements of the paper.
+
+Generally, what is true about the paper is also true about the presentation... with some caveats and adaptations.
+
+---
+
+
+# Get to the point soon(er)!
+
+It is important in papers, and more so in presentations, to get to the point of the study early.
+- **In the paper**:
+  * state the research question on the first (or at least second) page.
+- **In the presentation**:
+  * state the research question on the first (or at least second) slide. 
+  * offer the 'answer' to the question&mdash;the takeaway message of the study&mdash;on the next slide.
+
+When done this way, the research will stick with the audience throughout the presentation and will serve as an anchor of sorts for their questions.
+
+---
+
+# Use words (and slides) scarcely
+
+- A slide should have as few words as possible, but not fewer.
+  * (Do as I say not as I do).
+- Each slide counts.
+- Each bullet point matters.
+- The word-count is not the number of words that appear on a slide, rather it's the number of words the presenter says while on that slide.
+  * (One slide per one minute of a talk is my rule of thumb).
+
+---
+
+
+# Use illustrations generously
+
+- A picture is worth a nine-hundred-and-ninety-five words 
+  * (the other five words are reserved to label the axes).
+- **In the paper**:
+  * a figure should be self-contained.
+  * this is usually achieved by properly labeling the axes, and by providing coherent footnotes.
+- **In the presentation**:
+  * you are the 'coherent footnote.'
+
+---
+
+
+# Use tables... NOT
+
+- A table is not worth a slide. 
+- **In the paper**:
+  * a table can be useful as it documents exact values of some important statistics.
+  * a table, like figure, should be self-contained.
+- **In the presentation**:
+  * convert tables to figures or to words. 
+  * (you and your audience can thank me later).
+  * if you must have a table, keep it small (no more than a few rows and columns) even if its 'paper variant' is large.
+  * create the slide-specific table, do not paste its snapshot.
+
+---
+
+
+# Maths and equations
+
+- Use equations sparingly unless, of course, the paper is about the equations.
+- **In the paper**:
+  * explain every detail of each equation, every bit of its Greek and Latin characters.
+- **In the presentation**:
+  * provide just enough detail for the key equation(s), refer the audience to the paper.
+  * type equations, do not paste their snapshots.
+
+---
+
+class: inverse, center, middle
+name: work
+
+# Making it work
+
+---
+
+
+# Adopt your style, adapt to audience
+
+- People and topics vary, and so will the presentations.
+  * these slides do not offer the presentation formula.
+  * these slides merely offer a formula to a presentation.
+- Audience and forums vary, and so should the presentations.
+  * know your audience.
+  * respect your audience.
+
+---
+
+
+# Invite the audience to your journey
+
+- The point of the presentation is to make the people in the room start caring about your work.
+- They may or may not like it, and they may or may not have a good reason for that, but so long as they care enough to participate in the dialogue, you have won the audience.
+
+---
+
+
+# Have a conversation
+
+- A presentation is meant to be a dialogue, not a monologue. 
+- It is, indeed, a conversation among the peers, and everyone in the room is part of it.
+- You just happen to know the most about the topic&mdash;because it is *your* topic&mdash;and, thus, you get to lead the conversation.
+- Lead the conversation!
+- But take questions from the audience gracefully because, you know, that's how conversations work.
+
+---
+
+
+# Practice makes perfect
+
+- Giving a presentation can be stressful&mdash;it often is.
+- Experience reduces the degree of stressfulness, but that takes time (years).
+- In the short run: practice makes perfect.
+
+---
+
+
+# Enjoy the process
+
+- No presentation is perfect in absolute sense, however.
+- But it doesn't have to be perfect for it to be enjoyable.
+- Enjoyable to you as well as to your audience.
+- Aim for that, and everything else will just fall in place.
+
+---
+
+
+
+# Further reading
+
+These slides have been inspired by these excellent sources:
+
+[How to Give an Applied Micro Talk](https://www.brown.edu/Research/Shapiro/pdfs/applied_micro_slides.pdf) by *Jesse Shapiro*
+
+[Public Speaking for Academic Economists](https://mfr.osf.io/render?url=https%3A%2F%2Fosf.io%2Fd8wm9%2Fdownload) by *Rachael Meager*
+
+These slides have greatly benefited from *Jonathan Newton*'s thoughtful feedback. His [An Alternative Guide for the Young Economist](https://jonathannewton.net/wp-content/uploads/An%20alternative%20guide%20for%20the%20young%20economist.pdf), which is an insightful resource in and of itself, offers a nice illustration of an effective presentation.
+
