@@ -92,7 +92,7 @@ h2, h3, h4 {
 .title-slide h1  {
   color: forestgreen; /* change this */
   font-family: 'Corbel', sans-serif;
-  font-size: 42px;
+  font-size: 36px;
   font-weight: 640;
   text-align: left;
   text-shadow: none;
@@ -103,7 +103,7 @@ h2, h3, h4 {
   padding-bottom: 10px;
 }
 .title-slide h2  {
-  color: forestgreen; /* change this */
+  color: dimgray; /* change this */
   font-family: 'Corbel', sans-serif;
   font-size: 36px;
   font-weight: 480;
