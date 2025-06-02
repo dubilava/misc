@@ -1,6 +1,6 @@
 ---
 title: "Prices and Protests: Evidence from Maize Markets across Africa"
-subtitle: "Presented at the 2nd Scope Workshop on 3 June 2025"
+subtitle: "Presented at the 2nd SCoPE Workshop on 3 June 2025"
 author: "Aaron Humphreys, **David Ubilava**"
 output:
   xaringan::moon_reader:
@@ -27,7 +27,7 @@ loadfonts(device="win",quiet=T)
 
 Commodity price shocks have welfare implications for both net producers and consumers. In economies where social conditions are dire and political systems are fragile, these shocks may lead to conflict.
 
-Empirical evidence on the relationship between commodity prices and conflict, particularly in the agricultural sector, is unequivocal ([Blair et al. 2021](https://www.cambridge.org/core/journals/american-political-science-review/article/abs/do-commodity-price-shocks-cause-armed-conflict-a-metaanalysis-of-natural-experiments/469E8F1CBA02E4E5D525E3355DC401D9)). Studies have found both negative relationship ([Dube and Vargas, 2013](https://doi.org/10.1093/restud/rdt009); [Berman and Couttenier, 2015](https://doi.org/10.1162/REST_a_00521);[Fjelde, 2015](https://doi.org/10.1016/j.worlddev.2014.10.032)) and positive relationship ([Crost and Felter, 2020](https://doi.org/10.1093/jeea/jvz025); [McGuirk and Burke](https://doi.org/10.1086/709993); [Ubilava et al., 2023](https://doi.org/10.1111/ajae.12364)) between commodity prices and conflict.
+Empirical evidence on the relationship between commodity prices and conflict—particularly in the agricultural sector—is unequivocal ([Blair et al. 2021](https://www.cambridge.org/core/journals/american-political-science-review/article/abs/do-commodity-price-shocks-cause-armed-conflict-a-metaanalysis-of-natural-experiments/469E8F1CBA02E4E5D525E3355DC401D9)). Studies have found both negative ([Dube and Vargas, 2013](https://doi.org/10.1093/restud/rdt009); [Berman and Couttenier, 2015](https://doi.org/10.1162/REST_a_00521);[Fjelde, 2015](https://doi.org/10.1016/j.worlddev.2014.10.032)) and positive ([Crost and Felter, 2020](https://doi.org/10.1093/jeea/jvz025); [McGuirk and Burke](https://doi.org/10.1086/709993); [Ubilava et al., 2023](https://doi.org/10.1111/ajae.12364)) relationships between commodity prices and conflict.
 
 ]
 
@@ -54,9 +54,23 @@ This two-stage estimation framework allows us to estimate the local average trea
 
 .right-85[
 
-Most studies perform country-level analysis ([Bazzi and Blattman, 2014](https://www.aeaweb.org/articles?id=10.1257/mac.6.4.1)) or district- or cell-level analysis ([Dube and Vargas, 2013](https://academic.oup.com/restud/article-abstract/80/4/1384/1579342); [Berman and Couttenier, 2015](https://doi.org/10.1162/REST_a_00521); [McGuirk and Burke](https://doi.org/10.1086/709993); [De Winne and Peersman, 2021](https://doi.org/10.1080/07350015.2019.1684301)). 
+Most studies perform country- ([Bazzi and Blattman, 2014](https://www.aeaweb.org/articles?id=10.1257/mac.6.4.1)) or district- or cell-level analysis ([Dube and Vargas, 2013](https://academic.oup.com/restud/article-abstract/80/4/1384/1579342); [McGuirk and Burke](https://doi.org/10.1086/709993)). 
 
-We use a set of specific markets (cities) across Africa. This allows us to more accurately measure the effects and responses to income shocks from those who live in or near those cities.
+We use a set of specific **markets (cities)** across Africa. This allows us to more accurately measure the effects and responses to income shocks from those who live in or near those cities.
+
+
+]
+
+---
+
+
+# We focus on concrete conflict
+
+.right-85[
+
+Most studies use a broad definition of conflict ([Bazzi and Blattman, 2014](https://www.aeaweb.org/articles?id=10.1257/mac.6.4.1); [Berman and Couttenier, 2015](https://doi.org/10.1162/REST_a_00521); [De Winne and Peersman, 2021](https://doi.org/10.1080/07350015.2019.1684301)). 
+
+We focus on a specific type of conflict—**social unrest**—and further disentangle it into protests (a less violent form of conflict) and riots (which, by definition, can be violent insofar as they may qualify as 'political violence' rather than a 'demonstration').
 
 
 ]
@@ -70,7 +84,7 @@ We use a set of specific markets (cities) across Africa. This allows us to more 
 
 Most existing studies use annual data ([Bazzi and Blattman, 2014](https://www.aeaweb.org/articles?id=10.1257/mac.6.4.1); [Berman and Couttenier, 2015](https://doi.org/10.1162/REST_a_00521); [McGuirk and Burke](https://doi.org/10.1086/709993)). 
 
-We use monthly data. This allows us to capture short-term/immediate effects of income shocks rather than long-term/delayed ones, and also helps us make the case for the validity of the instrument. 
+We use **monthly data**. This allows us to capture short-term/immediate effects of income shocks rather than long-term/delayed ones, and also helps us make the case for the validity of the instrument. 
 
 ]
 
@@ -117,7 +131,7 @@ Local prices are incomplete. To subset the useful data for the analysis:
 
 2. we excluded series that spanned less than 15 years, had more than 10% missing observations, or contained gaps longer than four consecutive months.
 
-3. we sequentially eliminated markets with overlapping catchment zones — the area within a 100-km radius of a market centroid —  with the smallest population count until no overlaps remained.
+3. we sequentially eliminated markets with overlapping catchment zones—the area within a 100-km radius of a market centroid—with the smallest population count until no overlaps remained.
 
 ]
 
@@ -234,7 +248,7 @@ The assumption that global maize prices are exogenous to local conflict and pric
 
 .right-85[
 
-Empirical evidence suggests that global price shocks are transmitted — albeit imperfectly — to local markets, with an average transmission elasticity in the 0.3–0.4 range ([Baquedano and Liefert, 2014](https://doi.org/10.1016/j.foodpol.2013.11.001); [Dillon and Barrett, 2015](https://doi.org/10.1093/ajae/aav040)). Country-specific elasticities vary widely, from near zero (e.g., Burkina Faso, Niger, and Zambia) to well above 0.5 (e.g., Malawi and Ethiopia).
+Empirical evidence suggests that global price shocks are transmitted—albeit imperfectly—to local markets, with an average transmission elasticity in the 0.3–0.4 range ([Baquedano and Liefert, 2014](https://doi.org/10.1016/j.foodpol.2013.11.001); [Dillon and Barrett, 2015](https://doi.org/10.1093/ajae/aav040)). Country-specific elasticities vary widely, from near zero (e.g., Burkina Faso, Niger, and Zambia) to well above 0.5 (e.g., Malawi and Ethiopia).
 
 In our sample, the average transmission elasticity across markets is 0.23; which is 0.32 in markets located at or near seaports.
 
@@ -248,9 +262,9 @@ In our sample, the average transmission elasticity across markets is 0.23; which
 
 .right-85[
 
-This is presumably the most tenuous of the three assumptions, as global commodity price shocks could influence local conflict through channels other than local prices. 
+This is the most tenuous of the three assumptions, as global commodity price shocks could influence local conflict through channels other than local prices. 
 
-Our empirical framework — which relies on monthly data and focuses on specific, smaller-scale types of conflict as opposed to large-scale events - allows us to reasonably argue that local prices are the only plausible channel through which international price shocks could affect conflict.
+Our empirical framework—which relies on monthly data and focuses on specific, smaller-scale types of conflict as opposed to large-scale events—allows us to reasonably argue that local prices are the only plausible channel through which international price shocks could affect conflict.
 
 ]
 
