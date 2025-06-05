@@ -1,6 +1,6 @@
 ---
 title: "Prices and Protests: Evidence from Maize Markets across Africa"
-subtitle: "Presented at the 2nd SCoPE Workshop on 3 June 2025"
+subtitle: "Presented at the ADEW2025 on 6 June 2025"
 author: "Aaron Humphreys, **David Ubilava**"
 output:
   xaringan::moon_reader:
@@ -113,7 +113,7 @@ While an increase in income may reduce grievances among the likely beneficiaries
 |:-------------- |:---------- |:----------- |:------------- |
 | Opport. cost   | (-)        | (n/a)       | (?/-)         | 
 | Resentment     | (-)        | (+)         | (+/-)         | 
-| Together       | (-)        | (?/+)       | (?/-)         | 
+| Combined       | (-)        | (?/+)       | (?/-)         | 
 
 ]
 
@@ -366,41 +366,46 @@ Our empirical framework—which relies on monthly data and focuses on specific, 
 ---
 
 
-# Fractionalization has conflcit-enhancing differential effect
+# Agrarian diversity amplifies social unrest
 
 
 .right-85[
 
 
-| Conflict type        | Unrest   | Protests  | Riots  |
-|:-------------------- | --------:| ---------:| ---------:|
-| price                | -0.388*** | -0.362**  | -1.150***    |
-| price × crop         |  1.577   |  1.355    |  4.193*    |
-| price × frac         |  0.709** |  0.983*** |  2.845*** |
-| price × crop × frac  | -3.260   | -3.186    | -8.162*   |
+| Conflict type        | Unrest     | Protests   | Riots      |
+|:-------------------- | ----------:| ----------:| ----------:|
+| price                | -0.372\*** | -0.348\*** | -1.139\*** |
+| price × crop         |  1.200\*   |  0.998     |   3.919\** |
+| price × frac         |  0.843\*** |  1.110\*** |  2.943\*** |
+| price × crop × frac  | -4.198\**  | -4.071\**  | -8.842\**  |
+| price × crop × pola  |  1.309\**  | -1.236\**  |  0.950     |
 
 
 *frac* $=\sum_i \pi_i(1-\pi_i)$, where $\pi_i$ is the proportion of the area of a distinct ethnic group (Murdock) within the market catchment zone.
+
+*pola* $=\sum_i\sum_j \pi_i^2\pi_j\eta_{ij}$, where $\eta_{ij}$ is the cropland proportion distance.
+
 
 ]
 
 ---
 
 
-# Polarization has conflcit-enhancing differential effect
+
+# Growing-season rainfall amplifies the effect
 
 
 .right-85[
 
 
-| Conflict type        | Unrest   | Protests  | Riots     |
-|:-------------------- | --------:| ---------:| ---------:|
-| price                |  0.039   |  0.232    |  0.430    |
-| price × crop         | -0.966*  | -1.081**  | -0.653    |
-| price × crop × pola  |  1.081   |  0.968    |  0.398    |
+| Conflict type               | Unrest     | Protests   | Riots      |
+|:--------------------------- | ----------:| ----------:| ----------:|
+| price × crop × rain         | -0.681\*** | -0.376\*** | -0.790\*** |
+| price × crop × frac × rain  |  1.309\*** |  0.934\*** |  1.334\*** |
+| price × crop × pola × rain  | -0.205     | -0.215\*   | -0.149     |
 
 
-*pola* $=\sum_i\sum_j \pi_i^2\pi_j\eta_{ij}$, where $\eta_{ij}$ is the "cropland proportion distance" between groups $i$ and $j$ within the market catchment zone.
+*rain* is rainfall calculated as monthly deviations from long-run average values, averaged over the crop-growing season months. 
 
 ]
 
