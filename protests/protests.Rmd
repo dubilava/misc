@@ -1,6 +1,6 @@
 ---
 title: "Prices and Protests: Evidence from Maize Markets across Africa"
-subtitle: "Presented at the ADEW2025 on 6 June 2025"
+subtitle: "Presented at the AAEA2025 on 29 July 2025"
 author: "Aaron Humphreys, **David Ubilava**"
 output:
   xaringan::moon_reader:
@@ -91,35 +91,6 @@ We use **monthly data**. This allows us to capture short-term/immediate effects 
 ---
 
 
-# Higher prices can escalate or de-escalate conflict
-
-.right-85[
-
-Higher prices of locally produced commodities bring the potential for increased income among those employed in the agricultural sector (farmers), resulting in the raise of the **opportunity cost** of protesting. 
-
-While an increase in income may reduce grievances among the likely beneficiaries (farmers), higher spending by the rest of the population may heighten their **resentment**. Moreover, relative changes in income across groups can leave some feeling deprived — either in comparison to others or to their own past 
-
-]
-
----
-
-
-# Expected effects by groups and channels
-
-.right-85[
-
-
-| Channel        | Farmers    | Non-farmers | Overall       | 
-|:-------------- |:---------- |:----------- |:------------- |
-| Opport. cost   | (-)        | (n/a)       | (?/-)         | 
-| Resentment     | (-)        | (+)         | (+/-)         | 
-| Combined       | (-)        | (?/+)       | (?/-)         | 
-
-]
-
----
-
-
 # Markets and prices (FEWS, GIEWS, IMF)
 
 
@@ -142,9 +113,9 @@ Local prices are incomplete. To subset the useful data for the analysis:
 # Markets and prices (FEWS, GIEWS, IMF)
 
 
-.right-85[
+.left-50[
 
-![](figures/prices_map100.png)
+![](figures/markets_map_l180_r100.png)
 
 ]
 
@@ -156,7 +127,21 @@ Local prices are incomplete. To subset the useful data for the analysis:
 
 .right-85[
 
-![](figures/price_series100.png)
+![](figures/price_series_l180_r100.png)
+
+]
+
+
+
+---
+
+
+# Conflict (ACLED)
+
+
+.left-50[
+
+![](figures/conflict_map_l180_r100.png)
 
 ]
 
@@ -170,21 +155,7 @@ Local prices are incomplete. To subset the useful data for the analysis:
 
 .right-85[
 
-![](figures/conflict_map100.png)
-
-]
-
-
-
----
-
-
-# Conflict (ACLED)
-
-
-.right-85[
-
-![](figures/conflict_series100.png)
+![](figures/conflict_series_l180_r100.png)
 
 ]
 
@@ -194,6 +165,38 @@ Local prices are incomplete. To subset the useful data for the analysis:
 
 
 
+# Agrarian diversity across ethnic boundaries
+
+
+.left-50[
+
+![](figures/murdock_map_l180_r100.png)
+
+]
+
+
+
+---
+
+
+# Agrarian diversity across ethnic boundaries
+
+
+.left-45[
+
+![](figures/murdock_market25_l180_r100.png)
+
+]
+
+.right-45[
+
+![](figures/murdock_market28_l180_r100.png)
+
+]
+
+
+
+---
 
 
 
@@ -214,7 +217,7 @@ p_{it}=\gamma p_{t} + \alpha_i + \delta_i t + \upsilon_{it}\;~~\text{(first stag
 \end{equation}
 $$
 
-where: $c_{it}$ is a binary variable that can denote either the incidence of conflict in market $i$ in period $t$; $p_{it}$ is the local price and $p_{t}$ is the global price, both in natural logarithms.
+where: $c_{it}$ is a binary variable that denotes the incidence of conflict in market $i$ in period $t$; $p_{it}$ is the local price and $p_{t}$ is the global price, both in natural logarithms.
 
 ]
 
@@ -237,7 +240,7 @@ Identification relies on assumptions of (i) exogeneity: global price shocks are 
 
 .right-85[
 
-The assumption that global maize prices are exogenous to local conflict and prices in Africa is both plausible and widely accepted given that the continent accounts for only a small share of global maize production. For instance, Nigeria—the largest maize producer in our sample and second in the region after South Africa—contributes less than one percent of global maize output [FAO, 2025]().
+The assumption that global maize prices are exogenous to local conflict and prices in Africa is both plausible and widely accepted given that the continent accounts for only a small share of global maize production. For instance, Nigeria—the largest maize producer in our sample and second in the region after South Africa—contributes less than one percent of global maize output [FAO, 2025](https://www.fao.org/faostat/en/#data/QCL).
 
 ]
 
@@ -249,8 +252,6 @@ The assumption that global maize prices are exogenous to local conflict and pric
 .right-85[
 
 Empirical evidence suggests that global price shocks are transmitted—albeit imperfectly—to local markets, with an average transmission elasticity in the 0.3–0.4 range ([Baquedano and Liefert, 2014](https://doi.org/10.1016/j.foodpol.2013.11.001); [Dillon and Barrett, 2015](https://doi.org/10.1093/ajae/aav040)). Country-specific elasticities vary widely, from near zero (e.g., Burkina Faso, Niger, and Zambia) to well above 0.5 (e.g., Malawi and Ethiopia).
-
-In our sample, the average transmission elasticity across markets is 0.23; which is 0.32 in markets located at or near seaports.
 
 ]
 
@@ -271,45 +272,14 @@ Our empirical framework—which relies on monthly data and focuses on specific, 
 ---
 
 
-
-# Price increase reduces (?) unrest
-
-.right-85[
-
-
-| Conflict type     | Unrest | Protests  | Riots  |
-|:----------------- | --------:| --------:| --------:|
-| price             | -0.184*   | -0.095   |  0.047  |
-
-]
-
----
-
-
-# Access to the nearest seaport
+# No apparent relationship between prices and unrest
 
 
 .right-85[
 
-![](figures/roads_map100.png)
-
-]
-
-
----
-
-
-# Price increase reduces unrest in markets near the ports
-
-.right-85[
-
-| Conflict type     | Unrest | Protests  | Riots  |
-|:----------------- | --------:| --------:| --------:|
-| price             | -0.314**   | -0.282**   | -0.240  |
-| price × remote    |  0.176   |  0.254   |  0.391  |
-
-
-*remote* is distance, in 000 km, from the nearest seaport. 
+| Conflict type        | Unrest     | Protests   | Riots      |
+|:-------------------- | ----------:| ----------:| ----------:|
+| price                | -0.111     |  0.002     | -0.017     |
 
 ]
 
@@ -317,56 +287,31 @@ Our empirical framework—which relies on monthly data and focuses on specific, 
 
 
 
-# Price increase reduces protests in more agrarian markets
+# Agrarian diversity aggrevates social unrest
 
 
 .right-85[
 
+| Conflict type        | Unrest     | Protests   | Riots      |
+|:-------------------- | ----------:| ----------:| ----------:|
+| price                |  0.063     |  0.080     | -0.101     |
+| price × area         |  0.063     |  0.110     | -0.292     |
+| price × frac         | -0.741\**  | -0.518\*   |  0.528     |
+| price × ineq         |  0.859\**  |  0.759     | -0.106     |
 
-| Conflict type     | Unrest | Protests  | Riots  |
-|:----------------- | --------:| --------:| --------:|
-| price             | -0.013   |  0.171   |  0.406  |
-| price × crop    | -0.253   | -0.433** | -0.385  |
+*area* is the proportion of the area used for maize production.
 
+*frac* $=\sum_i \pi_i(1-\pi_i)$ is index of ethnic fractionalization.
 
-*crop* is the proportion of maize harvest area (MapSPAM), multiplied by 10, in the market catchment zone.
+*ineq* $=\sum_i\sum_j \pi_i\pi_j\delta_{ij}$, where $\delta_{ij}=|area_i-area_j|$ is index of maize production inequality.
 
 ]
 
 ---
 
 
-# Agrarian diversity across ethnic boundaries
 
-.right-85[
-
-![](figures/murdock_map100.png)
-
-]
-
-
----
-
-
-# Fractionalization and Polarization
-
-.left-45[
-
-![](figures/murdock_market2.png)
-
-]
-
-.right-45[
-
-![](figures/murdock_market1.png)
-
-]
-
-
----
-
-
-# Agrarian diversity amplifies social unrest
+# Growing-season rainfall deviation dampens the effect
 
 
 .right-85[
@@ -374,38 +319,14 @@ Our empirical framework—which relies on monthly data and focuses on specific, 
 
 | Conflict type        | Unrest     | Protests   | Riots      |
 |:-------------------- | ----------:| ----------:| ----------:|
-| price                | -0.372\*** | -0.348\*** | -1.139\*** |
-| price × crop         |  1.200\*   |  0.998     |   3.919\** |
-| price × frac         |  0.843\*** |  1.110\*** |  2.943\*** |
-| price × crop × frac  | -4.198\**  | -4.071\**  | -8.842\**  |
-| price × crop × pola  |  1.309\**  | -1.236\**  |  0.950     |
-
-
-*frac* $=\sum_i \pi_i(1-\pi_i)$, where $\pi_i$ is the proportion of the area of a distinct ethnic group (Murdock) within the market catchment zone.
-
-*pola* $=\sum_i\sum_j \pi_i^2\pi_j\eta_{ij}$, where $\eta_{ij}$ is the cropland proportion distance.
-
-
-]
-
----
-
-
-
-# Growing-season rainfall amplifies the effect
-
-
-.right-85[
-
-
-| Conflict type               | Unrest     | Protests   | Riots      |
-|:--------------------------- | ----------:| ----------:| ----------:|
-| price × crop × rain         | -0.681\*** | -0.376\*** | -0.790\*** |
-| price × crop × frac × rain  |  1.309\*** |  0.934\*** |  1.334\*** |
-| price × crop × pola × rain  | -0.205     | -0.215\*   | -0.149     |
-
-
-*rain* is rainfall calculated as monthly deviations from long-run average values, averaged over the crop-growing season months. 
+| price                |  0.082     |  0.097     | -0.983     |
+| price × area         |  0.103     |  0.147     | -0.260     |
+| price × frac         | -0.817\**  | -0.592\*   |  0.469     |
+| price × ineq         |  0.905\*** |  0.836\**  | -0.086     |
+| price × rain         | -0.041\**  | -0.038     | -0.030     |
+| price × area × rain  |  0.209\*** |  0.210\**  |  0.161\*** |
+| price × frac × rain  |  0.145\**  |  0.178\*   |  0.010     |
+| price × ineq × rain  | -0.447     | -0.537     | -0.202     |
 
 ]
 
@@ -419,7 +340,9 @@ Our empirical framework—which relies on monthly data and focuses on specific, 
 
 We contribute to the literatures on 
 
-- the economic roots of conflict ([Bazzi and Blattman, 2014](https://www.aeaweb.org/articles?id=10.1257/mac.6.4.1); [McGuirk and Burke, 2020](https://doi.org/10.1086/709993)).
+- the economic origins of conflict ([Bazzi and Blattman, 2014](https://www.aeaweb.org/articles?id=10.1257/mac.6.4.1); [McGuirk and Burke, 2020](https://doi.org/10.1086/709993)).
+
+- the agro-climatic roots of conflict ([Hendrix and Salehyan, 2012](https://doi.org/10.1177/0022343311426165); [Ubilava, 2025](https://doi.org/10.1111/ajae.12504)).
 
 - the ethnic diversity and conflict ([Alesina et al., 2011](https://doi.org/10.1111/j.1542-4774.2010.01009.x); [Bazzi and Gudgeon, 2021](https://www.aeaweb.org/articles?id=10.1257/app.20190309)).
 
