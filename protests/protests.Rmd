@@ -40,7 +40,7 @@ Empirical evidence on the relationship between commodity prices and conflict—p
 
 Most studies use international prices as exogenous proxies for local economic shocks ([Berman and Couttenier, 2015](https://doi.org/10.1162/REST_a_00521); [McGuirk and Burke](https://doi.org/10.1086/709993)). 
 
-We examine implied causal mechanism in this relationship by investigating the effect of local prices on conflict, using global prices as an instrumental variable for local prices. 
+We examine implied causal mechanism in this relationship by investigating the effect of **local prices** on conflict, using global prices as an instrumental variable for local prices. 
 
 This two-stage estimation framework allows us to estimate the local average treatment effect of prices on conflict, assuming that local prices are the sole channel through which global prices affect local conflict.
 
@@ -119,6 +119,7 @@ Local prices are incomplete. To subset the useful data for the analysis:
 
 ]
 
+
 ---
 
 
@@ -164,6 +165,46 @@ Local prices are incomplete. To subset the useful data for the analysis:
 ---
 
 
+# Baseline specification
+
+.right-85[
+
+$$
+\begin{equation}
+c_{it}=\beta p_{it} + \mu_i + \tau_i t + \varepsilon_{it}\;~~\text{(second stage)}
+\end{equation}
+$$
+
+
+$$
+\begin{equation}
+p_{it}=\gamma p_{t} + \alpha_i + \delta_i t + \upsilon_{it}\;~~\text{(first stage)}
+\end{equation}
+$$
+
+where: $c_{it}$ is a binary variable that denotes the incidence of conflict in market $i$ in period $t$; $p_{it}$ is the local price and $p_{t}$ is the global price, both in natural logarithms.
+
+]
+
+
+---
+
+
+# No apparent relationship between prices and unrest
+
+
+.right-85[
+
+| Conflict type        | Unrest     | Protests   | Riots      |
+|:-------------------- | ----------:| ----------:| ----------:|
+| price                | -0.111     |  0.002     | -0.017     |
+
+]
+
+---
+
+
+
 
 # Agrarian diversity across ethnic boundaries
 
@@ -200,90 +241,6 @@ Local prices are incomplete. To subset the useful data for the analysis:
 
 
 
-# Baseline specification
-
-.right-85[
-
-$$
-\begin{equation}
-c_{it}=\beta p_{it} + \mu_i + \tau_i t + \varepsilon_{it}\;~~\text{(second stage)}
-\end{equation}
-$$
-
-
-$$
-\begin{equation}
-p_{it}=\gamma p_{t} + \alpha_i + \delta_i t + \upsilon_{it}\;~~\text{(first stage)}
-\end{equation}
-$$
-
-where: $c_{it}$ is a binary variable that denotes the incidence of conflict in market $i$ in period $t$; $p_{it}$ is the local price and $p_{t}$ is the global price, both in natural logarithms.
-
-]
-
-
----
-
-
-# Identification
-
-.right-85[
-
-Identification relies on assumptions of (i) exogeneity: global price shocks are exogenous to local price shocks and conflict; (ii) relevance: global price shocks are transmitted to local prices; and (iii) exclusion: global shocks affect conflict only through their impact on local prices.
-
-]
-
----
-
-
-# Identification: (i) Exogeneity
-
-.right-85[
-
-The assumption that global maize prices are exogenous to local conflict and prices in Africa is both plausible and widely accepted given that the continent accounts for only a small share of global maize production. For instance, Nigeria—the largest maize producer in our sample and second in the region after South Africa—contributes less than one percent of global maize output [FAO, 2025](https://www.fao.org/faostat/en/#data/QCL).
-
-]
-
----
-
-
-# Identification: (ii) Relevance
-
-.right-85[
-
-Empirical evidence suggests that global price shocks are transmitted—albeit imperfectly—to local markets, with an average transmission elasticity in the 0.3–0.4 range ([Baquedano and Liefert, 2014](https://doi.org/10.1016/j.foodpol.2013.11.001); [Dillon and Barrett, 2015](https://doi.org/10.1093/ajae/aav040)). Country-specific elasticities vary widely, from near zero (e.g., Burkina Faso, Niger, and Zambia) to well above 0.5 (e.g., Malawi and Ethiopia).
-
-]
-
----
-
-
-
-# Identification: (iii) Exclusion
-
-.right-85[
-
-This is the most tenuous of the three assumptions, as global commodity price shocks could influence local conflict through channels other than local prices. 
-
-Our empirical framework—which relies on monthly data and focuses on specific, smaller-scale types of conflict as opposed to large-scale events—allows us to reasonably argue that local prices are the only plausible channel through which international price shocks could affect conflict.
-
-]
-
----
-
-
-# No apparent relationship between prices and unrest
-
-
-.right-85[
-
-| Conflict type        | Unrest     | Protests   | Riots      |
-|:-------------------- | ----------:| ----------:| ----------:|
-| price                | -0.111     |  0.002     | -0.017     |
-
-]
-
----
 
 
 
@@ -348,6 +305,73 @@ We contribute to the literatures on
 
 ]
 
+
+---
+
+
+# Identification
+
+.right-85[
+
+Identification relies on assumptions of (i) exogeneity: global price shocks are exogenous to local price shocks and conflict; (ii) relevance: global price shocks are transmitted to local prices; and (iii) exclusion: global shocks affect conflict only through their impact on local prices.
+
+]
+
+---
+
+
+# Identification: (i) Exogeneity
+
+.right-85[
+
+The assumption that global maize prices are exogenous to local conflict and prices in Africa is both plausible and widely accepted given that the continent accounts for only a small share of global maize production. For instance, Nigeria—the largest maize producer in our sample and second in the region after South Africa—contributes less than one percent of global maize output [FAO, 2025](https://www.fao.org/faostat/en/#data/QCL).
+
+]
+
+---
+
+
+# Identification: (ii) Relevance
+
+.right-85[
+
+Empirical evidence suggests that global price shocks are transmitted—albeit imperfectly—to local markets, with an average transmission elasticity in the 0.3–0.4 range ([Baquedano and Liefert, 2014](https://doi.org/10.1016/j.foodpol.2013.11.001); [Dillon and Barrett, 2015](https://doi.org/10.1093/ajae/aav040)). Country-specific elasticities vary widely, from near zero (e.g., Burkina Faso, Niger, and Zambia) to well above 0.5 (e.g., Malawi and Ethiopia).
+
+]
+
+---
+
+
+
+# Identification: (iii) Exclusion
+
+.right-85[
+
+This is the most tenuous of the three assumptions, as global commodity price shocks could influence local conflict through channels other than local prices. 
+
+Our empirical framework—which relies on monthly data and focuses on specific, smaller-scale types of conflict as opposed to large-scale events—allows us to reasonably argue that local prices are the only plausible channel through which international price shocks could affect conflict.
+
+]
+
+---
+
+
+
+
+# Agrarian diversity across ethnic boundaries
+
+
+.left-45[
+
+![](figures/correlation_price_l180_r100.png)
+
+]
+
+.right-45[
+
+![](figures/correlation_diverse_l180_r100.png)
+
+]
 
 
 
