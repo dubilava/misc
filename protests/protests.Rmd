@@ -1,6 +1,6 @@
 ---
 title: "Prices and Protests: Evidence from Maize Markets across Africa"
-subtitle: "Presented at the AAEA2025 on 29 July 2025"
+subtitle: "Presented at the SDEG workshop on 19 September 2025"
 author: "Aaron Humphreys, **David Ubilava**"
 output:
   xaringan::moon_reader:
@@ -25,7 +25,7 @@ loadfonts(device="win",quiet=T)
 
 .right-85[
 
-Commodity price shocks have welfare implications for both net producers and consumers. In economies where social conditions are dire and political systems are fragile, these shocks may lead to conflict.
+Changes in the prices of staple commodities that constitute a sizable share of people’s incomes and expenditures have important welfare implications. In economies where social conditions are dire and political systems are fragile, such changes may trigger conflict.
 
 Empirical evidence on the relationship between commodity prices and conflict—particularly in the agricultural sector—is unequivocal ([Blair et al. 2021](https://www.cambridge.org/core/journals/american-political-science-review/article/abs/do-commodity-price-shocks-cause-armed-conflict-a-metaanalysis-of-natural-experiments/469E8F1CBA02E4E5D525E3355DC401D9)). Studies have found both negative ([Dube and Vargas, 2013](https://doi.org/10.1093/restud/rdt009); [Berman and Couttenier, 2015](https://doi.org/10.1162/REST_a_00521);[Fjelde, 2015](https://doi.org/10.1016/j.worlddev.2014.10.032)) and positive ([Crost and Felter, 2020](https://doi.org/10.1093/jeea/jvz025); [McGuirk and Burke](https://doi.org/10.1086/709993); [Ubilava et al., 2023](https://doi.org/10.1111/ajae.12364)) relationships between commodity prices and conflict.
 
@@ -91,18 +91,18 @@ We use **monthly data**. This allows us to capture short-term/immediate effects 
 ---
 
 
-# Markets and prices (FEWS, GIEWS, IMF)
+# Markets and prices (WFP, FEWS, GIEWS, IMF)
 
 
 .right-85[
 
 Local prices are incomplete. To subset the useful data for the analysis:
 
-1. we retained locally procured retail prices, reported in USD per kg and originated from a single data source.
+1. we retained locally procured retail prices, reported in USD per kg.
 
-2. we excluded series that spanned less than 15 years, had more than 10% missing observations, or contained gaps longer than four consecutive months.
+2. we excluded series that spanned less than 10 years, had more than 10% missing observations, or contained gaps longer than four consecutive months.
 
-3. we sequentially eliminated markets with overlapping catchment zones—the area within a 100-km radius of a market centroid—with the smallest population count until no overlaps remained.
+3. we sequentially eliminated markets with overlapping catchment zones—the area within a 50-km radius of a centroid—with the smallest population count until no overlaps remained.
 
 ]
 
@@ -110,12 +110,12 @@ Local prices are incomplete. To subset the useful data for the analysis:
 
 
 
-# Markets and prices (FEWS, GIEWS, IMF)
+# Markets and prices (WFP, FEWS, GIEWS, IMF)
 
 
 .left-50[
 
-![](figures/markets_map_l180_r100.png)
+![](figures/markets_map_l120_r50.png)
 
 ]
 
@@ -123,12 +123,12 @@ Local prices are incomplete. To subset the useful data for the analysis:
 ---
 
 
-# Markets and prices (FEWS, GIEWS, IMF)
+# Markets and prices (WFP, FEWS, GIEWS, IMF)
 
 
 .right-85[
 
-![](figures/price_series_l180_r100.png)
+![](figures/price_series_l120_r50.png)
 
 ]
 
@@ -137,12 +137,12 @@ Local prices are incomplete. To subset the useful data for the analysis:
 ---
 
 
-# Conflict (ACLED)
+# Protests and riots (ACLED)
 
 
 .left-50[
 
-![](figures/conflict_map_l180_r100.png)
+![](figures/conflict_map_l120_r50.png)
 
 ]
 
@@ -151,12 +151,12 @@ Local prices are incomplete. To subset the useful data for the analysis:
 ---
 
 
-# Conflict (ACLED)
+# Protests and riots (ACLED)
 
 
 .right-85[
 
-![](figures/conflict_series_l180_r100.png)
+![](figures/conflict_series_l120_r50.png)
 
 ]
 
@@ -171,18 +171,18 @@ Local prices are incomplete. To subset the useful data for the analysis:
 
 $$
 \begin{equation}
-c_{it}=\beta p_{it} + \mu_i + \tau_i t + \varepsilon_{it}\;~~\text{(second stage)}
+CONFLICT_{it}=\beta PRICE_{it} + \mu_i + \lambda_i t + \mathbf{\delta}_i'\mathbf{d}_t + \varepsilon_{it}\;~~\text{(2nd stage)}
 \end{equation}
 $$
 
 
 $$
 \begin{equation}
-p_{it}=\gamma p_{t} + \alpha_i + \delta_i t + \upsilon_{it}\;~~\text{(first stage)}
+PRICE_{it}=\alpha PRICE_{t} + \kappa_i + \gamma_i t + \mathbf{\eta}_i'\mathbf{d}_t + \upsilon_{it}\;~~\text{(1st stage)}
 \end{equation}
 $$
 
-where: $c_{it}$ is a binary variable that denotes the incidence of conflict in market $i$ in period $t$; $p_{it}$ is the local price and $p_{t}$ is the global price, both in natural logarithms.
+where: $CONFLICT_{it}$ is a binary variable that denotes the incidence of conflict in market $i$ in period $t$; $PRICE_{it}$ is the local price and $PRICE_{t}$ is the global price, both in natural logarithms. 
 
 ]
 
@@ -190,14 +190,14 @@ where: $c_{it}$ is a binary variable that denotes the incidence of conflict in m
 ---
 
 
-# No apparent relationship between prices and unrest
+# Negative relationship between prices and social unrest
 
 
 .right-85[
 
 | Conflict type        | Unrest     | Protests   | Riots      |
 |:-------------------- | ----------:| ----------:| ----------:|
-| price                | -0.111     |  0.002     | -0.017     |
+| PRICE                | -0.100\*** |  -0.062    | -0.044     |
 
 ]
 
@@ -206,12 +206,12 @@ where: $c_{it}$ is a binary variable that denotes the incidence of conflict in m
 
 
 
-# Agrarian diversity across ethnic boundaries
+# Production diversity across ethnic boundaries
 
 
 .left-50[
 
-![](figures/murdock_map_l180_r100.png)
+![](figures/murdock_map_l120_r50.png)
 
 ]
 
@@ -220,18 +220,18 @@ where: $c_{it}$ is a binary variable that denotes the incidence of conflict in m
 ---
 
 
-# Agrarian diversity across ethnic boundaries
+# Production diversity across ethnic boundaries
 
 
 .left-45[
 
-![](figures/murdock_market25_l180_r100.png)
+![](figures/murdock_market15_l120_r50.png)
 
 ]
 
 .right-45[
 
-![](figures/murdock_market28_l180_r100.png)
+![](figures/murdock_market59_l120_r50.png)
 
 ]
 
@@ -241,26 +241,40 @@ where: $c_{it}$ is a binary variable that denotes the incidence of conflict in m
 
 
 
-
-
-
-# Agrarian diversity aggrevates social unrest
+# Ag dependence dampens / Ag diversity aggrevates unrest
 
 
 .right-85[
 
 | Conflict type        | Unrest     | Protests   | Riots      |
 |:-------------------- | ----------:| ----------:| ----------:|
-| price                |  0.063     |  0.080     | -0.101     |
-| price × area         |  0.063     |  0.110     | -0.292     |
-| price × frac         | -0.741\**  | -0.518\*   |  0.528     |
-| price × ineq         |  0.859\**  |  0.759     | -0.106     |
+| PRICE                | -0.113\**  | -0.085\**  | -0.039     |
+| PRICE × A            | -0.134     | -0.083     | -0.293\**  |
+| PRICE × G            |  0.625\*   |  0.603\*   |  0.875\*** |
 
-*area* is the proportion of the area used for maize production.
+*A* is the proportion of the area used for maize production.
 
-*frac* $=\sum_i \pi_i(1-\pi_i)$ is index of ethnic fractionalization.
+*G* $=\sum_i\sum_j \pi_i\pi_j\delta_{ij}$, where $\delta_{ij}=|area_i-area_j|$ is a "distance" measure of maize production inequality across ethnic boundaries.
 
-*ineq* $=\sum_i\sum_j \pi_i\pi_j\delta_{ij}$, where $\delta_{ij}=|area_i-area_j|$ is index of maize production inequality.
+]
+
+---
+
+
+# Postharvest seasonality
+
+
+.right-85[
+
+
+| Conflict type       | Unrest     | Protests   | Riots      |
+|:------------------- | ----------:| ----------:| ----------:|
+| PRICE               | -0.123\**  | -0.104\**  | -0.029     |
+| PRICE × A           | -0.186\*   | -0.111     | -0.266\**  |
+| PRICE × G           |  0.782\**  |  0.777\**  |  0.864\*** |
+| PRICE × H           |  0.039     |  0.075     | -0.041     |
+| PRICE × A × H       |  0.178     |  0.091     | -0.086     |
+| PRICE × G × H       | -0.583\*** | -0.643\*** |  0.025     |
 
 ]
 
@@ -268,22 +282,40 @@ where: $c_{it}$ is a binary variable that denotes the incidence of conflict in m
 
 
 
-# Growing-season rainfall deviation dampens the effect
+# Growing-season rainfall
 
 
 .right-85[
 
 
-| Conflict type        | Unrest     | Protests   | Riots      |
-|:-------------------- | ----------:| ----------:| ----------:|
-| price                |  0.082     |  0.097     | -0.983     |
-| price × area         |  0.103     |  0.147     | -0.260     |
-| price × frac         | -0.817\**  | -0.592\*   |  0.469     |
-| price × ineq         |  0.905\*** |  0.836\**  | -0.086     |
-| price × rain         | -0.041\**  | -0.038     | -0.030     |
-| price × area × rain  |  0.209\*** |  0.210\**  |  0.161\*** |
-| price × frac × rain  |  0.145\**  |  0.178\*   |  0.010     |
-| price × ineq × rain  | -0.447     | -0.537     | -0.202     |
+| Conflict type       | Unrest     | Protests   | Riots      |
+|:------------------- | ----------:| ----------:| ----------:|
+| PRICE               | -0.115\**  | -0.090\**  | -0.042     |
+| PRICE × A           | -0.130     | -0.072     | -0.314\**  |
+| PRICE × G           |  0.639     |  0.608     |  0.924\*** |
+| PRICE × R           |  0.009     |  0.015     |  0.010     |
+| PRICE × A × R       | -0.011     | -0.028     | -0.046     |
+| PRICE × G × R       | -0.093     | -0.048     | -0.210\*   |
+
+]
+
+---
+
+
+# Afrobarometer surveys
+
+
+.right-85[
+
+
+| Conflict type       | Unrest     | Violence   | Conflict    |
+|:------------------- | ----------:| ----------:| -----------:|
+| PRICE               | -0.918\*** | -0.197     | -0.457\**   |
+| PRICE × A           |  0.097     |  0.213     | -0.004      |
+| PRICE × G           |  0.303     |  0.238     |  0.844\*    |
+| PRICE × AGEMP       |  0.144\*** | -0.291\*** | -0.250\***  |
+| PRICE × A × AGEMP   |  0.079     | -0.063     | -0.017      |
+| PRICE × G × AGEMP   | -0.340\**  |  0.361\*** |  0.213\**   |
 
 ]
 
@@ -353,23 +385,6 @@ Our empirical framework—which relies on monthly data and focuses on specific, 
 
 ]
 
----
-
-
-
-
-# Agrarian diversity across ethnic boundaries
-
-
-.left-45[
-
-![](figures/correlation_price_l180_r100.png)
-
-]
-
-.right-45[
-
-![](figures/correlation_diverse_l180_r100.png)
 
 ]
 
