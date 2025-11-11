@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Closed-Book vs Open-Web</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="David Ubilava" />
+    <script src="libs/header-attrs-2.30/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/metropolis.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/metropolis-fonts.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Closed-Book vs Open-Web
+]
+.subtitle[
+## Presented at the FASS Teaching Symposium 2025
+]
+.author[
+### David Ubilava
+]
+
+---
+
+
+
+
+
+
+
+# Why are we having this conversation
+
+
+.right-85[
+
+Open-book exams have been around for quite some time.
+
+Even open-web exams and assessments are older than most of us would care to admit.
+
+But until recently, they were not a big deal. Certainly not as big of a deal as they are now.
+
+The reason? Technology. Which, as is often the case, can be both a friend and a foe.
+
+]
+
+
+---
+
+
+# Some context and relevant details
+
+
+.right-85[
+
+The following graphs and observations are based on a large(-ish) unit that I have been teaching for over a decade.
+
+The unit is somewhat math-heavy, but not excessively so.
+
+]
+
+
+---
+
+
+
+# Dip and recovery in exam performance
+
+
+.left-45[
+
+(Closed-book) final exam marks dipped at the onset of the pandemic - following the switch to online teaching - and gradually recovered in subsequent years.
+
+(Open-web) quiz marks were consistently and substantially higher than the final exam marks.
+
+]
+
+
+.right-45[
+
+![](figures/fig1.png)
+
+]
+
+
+---
+
+
+
+# Midterm marks more or less "explain" final marks
+
+
+.right-85[
+
+![](figures/fig2.png)
+
+]
+
+
+---
+
+
+
+# Quiz marks are all but unrelated to final marks
+
+
+.right-85[
+
+![](figures/fig3.png)
+
+]
+
+
+---
+
+
+
+# Hardly any relationship between online and in-class tests
+
+
+.left-45[
+
+In 2024, I ran both closed-book midterm tests and online quizzes.
+
+For the midterm, I ran three different in-class tests. The midterm mark was based on the best of the three results.
+
+Even so, the average midterm mark was well below the average quiz mark, and quiz performance had virtually no predictive power for the midterm.
+
+]
+
+
+.right-45[
+
+![](figures/fig4.png)
+
+]
+
+
+---
+
+
+
+# How students score the unit
+
+
+.left-45[
+
+Student satisfaction - across all dimensions - dipped at the onset of the pandemic, following the switch to online teaching.
+
+Satisfaction with overall quality and feedback recovered quickly, whereas satisfaction with assessment quality remained subdued for as long as (open-web) quizzes constituted a substantial component of assessment.
+
+]
+
+
+.right-45[
+
+![](figures/fig5.png)
+
+]
+
+
+---
+
+
+
+# What students say about the unit
+
+
+.left-45[
+
+During the period of pandemic-related online teaching and assessment, there was a **small decline** in the positive sentiment in students’ responses to the open-ended question, “*What have been the best aspects of this unit of study?*”, and a **substantial increase** in the negative sentiment in their responses to the question, “*What aspects of this unit of study most need improvement?*”
+
+
+]
+
+
+.right-45[
+
+![](figures/fig6.png)
+
+]
+
+
+---
+
+
+
+# In conclusion...
+
+
+.right-85[
+
+... and to paraphrase Winston Churchill:
+
+*closed-book exams are the worst form of assessments except for all those other forms that have been tried from time to time.*
+
+]
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+  "highlightStyle": "github",
+  "countIncrementalSlides": false,
+  "ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

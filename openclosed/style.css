@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300&display=swap');
+
+.remark-slide-content {
+  background-color: white;
+  border-top: 90px solid #e64626; /* change this */
+  font-family: 'Corbel', sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 1.4;
+  padding: 0em 2em 2em 2em;
+}
+
+.remark-slide-content h1 {
+  font-size: 44px;
+}
+
+.remark-slide-content h2 {
+  font-size: 36px;
+}
+
+.remark-slide-content h3 {
+  font-size: 28px;
+}
+
+.remark-slide-number {
+  font-family: 'Corbel', sans-serif;
+  font-size: 13pt;
+  font-weight: 300;
+  color: #424242;
+  opacity: 1;
+}
+.inverse .remark-slide-number {
+  font-family: 'Corbel', sans-serif;
+  font-size: 13pt;
+  font-weight: 300;
+  color: white;
+  opacity: 1;
+}
+
+
+
+@media only screen {
+  html {
+    font-size: calc(1.25*var(--base-font-size));
+  }
+}
+
+.title-slide .inverse .remark-slide-content {
+  background-color: white;
+}
+
+.inverse {
+  background-color: #424242; /* change this */
+  text-shadow: none;
+}
+
+.clear{
+  border-top: 0px solid white;
+}
+
+h1 {
+  padding-top: -10px;
+  padding-bottom: 10px;
+  font-family: 'Corbel', sans-serif;
+  font-weight: normal;
+  margin-top: -75px;
+  margin-left: -00px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+h2, h3, h4 {
+  padding-top: -10px;
+  padding-bottom: 00px;
+  color: #424242;
+  text-shadow: none;
+  font-family: 'Corbel', sans-serif;
+  font-weight: normal;
+  text-align: left;
+  margin-top: 00px;
+  margin-left: 00px;
+  margin-bottom: 10px;
+}
+
+
+
+.title-slide {
+  background-color: white;
+  border-top: 100px solid white;
+}
+
+.title-slide h1  {
+  color: #e64626; /* change this */
+  font-family: 'Corbel', sans-serif;
+  font-size: 48px;
+  font-weight: 640;
+  text-align: left;
+  text-shadow: none;
+  margin-top:  160px;
+  margin-left: 10px;
+  margin-bottom: 00px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.title-slide h2  {
+  color: #424242; /* change this */
+  font-family: 'Corbel', sans-serif;
+  font-size: 32px;
+  font-weight: 480;
+  text-align: left;
+  text-shadow: none;
+  margin-top: 00px;
+  margin-left: 10px;
+  margin-bottom: 00px;
+  padding-top: 00px;
+  padding-bottom: 00px;
+}
+.title-slide h3  {
+  color: black; /* change this */
+  font-family: 'Corbel', sans-serif;
+  font-size: 32px;
+  font-weight: 320;
+  text-align: left;
+  text-shadow: none;
+  margin-top: 120px;
+  margin-left: 10px;
+  margin-bottom: 00px;
+  padding-top: 00px;
+  padding-bottom: 00px;
+}
+
+hr, .title-slide h1::after, .mline h1::after {
+  content: '';
+  display: block;
+  border: none;
+  background-color: #e64626; /* change this */
+  color: #424242;
+  height: 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 00px;
+  padding-bottom: 00px;
+}
+
+hr, .title-slide h2::after, .mline h2::after {
+  content: '';
+  display: block;
+  border: none;
+  background-color: #e64626; /* change this */
+  color: #424242;
+  height: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 00px;
+  padding-bottom: 00px;
+}
+
+
+
+/* unvisited link */
+a:link {
+  color: #e64626;
+}
+
+/* visited link */
+a:visited {
+  color: #e64626;
+}
+
+/* mouse over link */
+a:hover {
+  color: #e64626;
+}
+
+/* selected link */
+a:active {
+  color: #e64626;
+}
+
+.left-35 {
+  padding-top: 0;
+  padding-left: 60px;
+  float: left;
+  width: 35%;
+}
+.left-40 {
+  padding-top: 0;
+  float: left;
+  width: 40%;
+}
+.left-45 {
+  padding-top: 0;
+  float: left;
+  width: 45%;
+}
+.left-50 {
+  padding-top: 0;
+  float: left;
+  width: 50%;
+}
+.left-55 {
+  padding-top: 0;
+  float: left;
+  width: 55%;
+}
+.right-85 {
+  padding-top: 0;
+  float: right;
+  width: 85%;
+}
+.right-60 {
+  padding-top: 0;
+  float: right;
+  width: 60%;
+}
+.right-50 {
+  padding-top: 0;
+  float: right;
+  width: 50%;
+}
+.right-45 {
+  padding-top: 0;
+  float: right;
+  width: 45%;
+}
+.right-40 {
+  padding-top: 0;
+  float: right;
+  width: 40%;
+}
+.right-35 {
+  padding-top: 0;
+  padding-right: 60px;
+  float: right;
+  width: 35%;
+}
